@@ -1,0 +1,75 @@
+
+@import '~assets/scss/breakpoints.scss';
+@import '~assets/scss/variables.scss';
+
+.title {
+    color: var(--true-black);
+
+    &--layout {
+        margin-top: 1.8em;
+
+        @include lg {
+            margin-top: 1em;
+        }
+    }
+
+    &--large {
+        font-size: 2em;
+            @include md {
+                font-size: 3em;
+        }
+    }
+
+    &--small {
+        margin-top: 1em;
+        margin-bottom: .2em;
+        font-size: 1.3em;
+        @include md {
+            font-size: 1.8em;
+        }
+    }
+
+    &--light {
+        color: var(--white);
+        .title__text {
+            &::after {
+                background: var(--white);
+            }
+        }
+    }
+}
+
+.title--centered {
+    width: 100%;
+    text-align: center;
+}
+
+.title--h1 {
+  padding-top: 2.5em;
+  padding-bottom: .7em;
+}
+
+.title--hero {
+  padding-top: 1em;
+}
+
+.title__text {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: var(--true-black);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -25%;
+    }
+    &--red {
+        &::after {
+            background: #ff512f;
+        }
+    }
+}

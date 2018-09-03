@@ -1,0 +1,68 @@
+
+@import 'reset';
+@import 'breakpoints';
+@import 'variables';
+
+html,body { overflow-x: hidden; }
+
+body {
+	background: var(--white);
+	color: var(--black);
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--serif-font-family);
+	letter-spacing: 1px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hr {
+	background: var(--black);
+	height: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15em;
+
+	@include md {
+		margin-bottom: 3em;
+		width: 30em;
+	}
+}
+
+// ul {
+// 	list-style-type: none;
+//
+// 	li {
+// 		margin: 0;
+// 		padding: 0;
+// 	}
+// }
+
+// -----------------------------------------------------
+// Section
+// -----------------------------------------------------
+.Section {
+	padding: 1em;
+}
+
+.Section--layout {
+	margin-top: 70px;
+	padding-top: 0 !important;
+}
+
+.Section--sm-edge {
+	padding: 0;
+	@media(--lg-viewport) {
+		padding: 2em;
+	}
+}

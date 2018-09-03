@@ -1,0 +1,77 @@
+// ----------- fonts.css
+@font-face {
+	font-family: 'Acta';
+	src: url('/fonts/37005071-b652-4def-8bb3-55fa40f28899.eot?#iefix');
+	src: url('/fonts/37005071-b652-4def-8bb3-55fa40f28899.eot?#iefix') format('eot'), url('/fonts/d43ce201-c609-4bd5-b93d-465fadbbbeb6.woff2') format('woff2'), url('/fonts/11bedca6-0c3b-4ece-a8d2-46645d1cfa0f.woff') format('woff'), url('/fonts/853dc195-a277-46b6-acd0-43c17211b7a9.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "jray";
+  src:url("/fonts/jray.eot");
+  src:url("/fonts/jray.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/jray.woff") format("woff"),
+    url("/fonts/jray.ttf") format("truetype"),
+    url("/fonts/jray.svg#jray") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+[data-icon]:before {
+  font-family: "jray" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "jray" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\61";
+}
+.icon-instagram:before {
+  content: "\62";
+}
+.icon-linkedin:before {
+  content: "\63";
+}
+.icon-medium:before {
+  content: "\64";
+}
+
+.icon-github:before {
+  content: "\65";
+}

@@ -1,0 +1,96 @@
+@import '~assets/scss/breakpoints.scss';
+@import '~assets/scss/variables.scss';
+
+.Talk-Grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(22rem, 22rem);
+
+
+    @include md {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include lg {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    &--Single {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-auto-rows: minmax(22rem, 22rem);
+
+        @include md {
+            grid-template-columns: 1fr;
+            .Talk {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+.Talk {
+    position: relative;
+}
+
+.Talk__logo {
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.cc-logo {
+    fill: #cea3fc;
+}
+
+.Talk__logo-wrapper {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.Talk__content {
+    height: 100%;
+    position: relative;
+    img, svg {
+        position: relative;
+        top: 45%;
+        transform: translateY(-45%);
+    }
+
+    @include lg {
+        height: 100%;
+        img, svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.Talk__title {
+    color: white;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    bottom: 3em;
+    letter-spacing: 1px;
+    font-family: var(--serif-font-family);
+
+    @media(--lg-viewport) {
+        bottom: 2em;
+    }
+
+    &--dark {
+        color: black;
+    }
+}

@@ -1,0 +1,51 @@
+
+@import '~assets/scss/breakpoints.scss';
+
+.copy {
+	font-size: 1em;
+	line-height: 2;
+	padding: 1em;
+	letter-spacing: .02em;
+
+	&--condensed {
+		padding: 1em;
+	}
+
+	&--wide {
+		@include md {
+			padding-top: 2em;
+			padding-bottom: 2em;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	&--centered {
+		text-align: center;
+	}
+
+	@include md {
+		font-size: 1.5em;
+	}
+
+	@include lg {
+		font-size: 1em;
+	}
+
+	a {
+		color: var(--black);
+		&:hover,
+		&:focus,
+		&:visited {
+			color: var(--black);
+		}
+	}
+}
+
+.copy-paragraph {
+    @include md {
+	    width: 80%;
+    }
+	margin-left: auto;
+	margin-right: auto;
+}

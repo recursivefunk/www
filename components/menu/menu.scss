@@ -1,0 +1,124 @@
+
+@import '~assets/scss/breakpoints.scss';
+@import '~assets/scss/variables.scss';
+
+.Menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity .2s ease-in-out, top .2s ease-in-out;
+    opacity: 0;
+
+    &--pushed {
+        top: 70px;
+    }
+
+    .Menu__content {
+        z-index: -1;
+    }
+
+    &--shown {
+        z-index: 10001;
+        opacity: 1;
+        .Menu__content {
+            z-index: 1001;
+        }
+        .Menu__overlay {
+            z-index: 1000;
+        }
+    }
+}
+
+.Menu__overlay {
+    background: var(--highlight);
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Menu__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: var(--white);
+    font-size: 3em;
+
+    @include md {
+        font-size: 1em;
+    }
+
+    @include lg {
+        top: 50px;
+    }
+}
+
+.Menu__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+
+    .Menu__nav-item:not(:first-child) {
+        margin-top: .3em;
+    }
+}
+
+.Menu__nav-item {
+    text-align: center;
+    position: relative;
+    top: 0;
+    transition: top .2s ease-in-out;
+
+    @include lg {
+        margin-top: 0;
+    }
+
+    .title {
+        @include lg {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: var(--white);
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        &::after {
+            content: '';
+            background: transparent;
+            transition: background .4s ease-in-out, width .2s ease-in-out;
+            height: 2px;
+            left: 50%;
+            margin-left: -5%;
+            width: 10%;
+        }
+    }
+
+    @include md {
+        font-size: 5em;
+    }
+
+    @include lg {
+        &:hover {
+            top: -.1em;
+            a {
+                &::after {
+                    background: var(--white);
+                }
+            }
+        }
+    }
+}

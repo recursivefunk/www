@@ -1,0 +1,69 @@
+
+@import '~assets/scss/breakpoints.scss';
+
+.Media-Text-Grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(20rem, 25rem);
+
+
+  @include md {
+		grid-auto-rows: minmax(30rem, 35rem);
+	}
+
+  @include lg {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(30rem, 35rem);
+  }
+}
+
+.Media-Text {}
+
+.Media-Text__Media {
+	position: relative;
+  height: auto;
+}
+
+.Media-Text__Text {
+	height: auto;
+	position: relative;
+
+	@include md {
+		margin: 0;
+		padding: 1em;
+	}
+}
+
+.Media-Text__key-val {
+	padding-left: 2em;
+	padding-right: 2em;
+
+	@include md {
+		font-size: 1.3em;
+		padding: 0;
+	}
+
+	@include lg {
+		font-size: .9em;
+	}
+
+	.Media-Text-Key-Val__item:not(:last-child) {
+		margin-bottom: .5em;
+	}
+}
+
+.Media-Text__key-val--key {
+	font-family: var(--serif-font-family);
+	padding-right: .5em;
+}
+
+.Media-Text__Content {
+	@include lg {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

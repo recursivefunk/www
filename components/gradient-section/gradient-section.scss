@@ -1,0 +1,36 @@
+
+@import '~assets/scss/breakpoints.scss';
+
+.gradient-section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	opacity: .7;
+	background-size: cover !important;
+
+	&--offset {
+		width: 90%;
+		height:90%;
+		top: 3%;
+		left: 3.8%;
+		position: absolute;
+
+		@include lg {
+			top: 4%;
+		}
+	}
+}
+
+.gradient-section__overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background: white;
+	opacity: .7;
+
+	&--dark {
+		background: black;
+	}
+}

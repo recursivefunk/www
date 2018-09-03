@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Page Not Found &middot; recursivefunk.io</title>
+        <style media="screen">
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          font: inherit;
+          vertical-align: baseline; }
+
+        html {
+          font-family: sans-serif;
+          /* 1 */
+          -ms-text-size-adjust: 100%;
+          /* 2 */
+          -webkit-text-size-adjust: 100%;
+          /* 2 */ }
+
+        /**
+           * Remove default margin.
+           */
+        body {
+          margin: 0; }
+
+        /* HTML5 display definitions
+             ========================================================================== */
+        /**
+           * Correct `block` display not defined for any HTML5 element in IE 8/9.
+           * Correct `block` display not defined for `details` or `summary` in IE 10/11
+           * and Firefox.
+           * Correct `block` display not defined for `main` in IE 11.
+           */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+          display: block; }
+
+        /**
+           * 1. Correct `inline-block` display not defined in IE 8/9.
+           * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+           */
+        audio,
+        canvas,
+        progress,
+        video {
+          display: inline-block;
+          /* 1 */
+          vertical-align: baseline;
+          /* 2 */ }
+
+        /**
+           * Prevent modern browsers from displaying `audio` without controls.
+           * Remove excess height in iOS 5 devices.
+           */
+        audio:not([controls]) {
+          display: none;
+          height: 0; }
+
+        /**
+           * Address `[hidden]` styling not present in IE 8/9/10.
+           * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+           */
+        [hidden],
+        template {
+          display: none; }
+
+        /* Links
+             ========================================================================== */
+        /**
+           * Remove the gray background color from active links in IE 10.
+           */
+        a {
+          background-color: transparent; }
+
+        /**
+           * Improve readability of focused elements when they are also in an
+           * active/hover state.
+           */
+        a:active,
+        a:hover {
+          outline: 0; }
+
+          .gradient-page__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            padding: 2em; }
+
+          .gradient-page {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: relative; }
+              .gradient-page .gradient-page__inner--lost {
+                background: url(/img/lost.jpg) center center;
+                opacity: .8; }
+
+          .gradient-page__inner {
+            z-index: 4;
+            overflow: hidden;
+            background-size: cover !important;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; }
+            .gradient-page__inner::after {
+              content: '';
+              background: black;
+              width: 100%;
+              height: 100%;
+              opacity: .8;
+              z-index: 5;
+              position: absolute; }
+            .gradient-page__inner--white::after {
+              content: '';
+              background: white; }
+
+          .gradient-inner__content {
+            position: absolute;
+            top: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            padding: 3em; }
+
+          .title {
+            font-size: 2.2em;
+            position: relative;
+            text-align: center;
+            color: black;
+            font-weight: 700;
+            transition: opacity, .3s ease-in-out, top .3s ease-in-out;
+            letter-spacing: 1px; }
+            .title--small {
+              font-size: 1.2em; }
+            .title--visible {
+              top: 0 !important;
+              opacity: 1 !important; }
+            .title--minimal {
+              top: 0.5em;
+              opacity: 0; }
+              @media screen and (min-width: 40em) {
+                .title--minimal {
+                  font-size: 4em; } }
+              @media screen and (min-width: 64em) {
+                .title--minimal {
+                  font-size: 3.5em; } }
+            .title--light {
+              color: white; }
+              .title--light .title__text::after {
+                background: white; }
+
+          .title__text {
+            position: relative;
+            display: inline-block;
+            margin-bottom: .5em; }
+            .title__text::after {
+              content: '';
+              width: 50%;
+              height: 2px;
+              background: black;
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              margin-left: -25%; }
+            .title__text--red::after {
+              background: #FF512F; }
+
+          .banner {
+            position: absolute;
+            height: 6.25rem;
+            display: block;
+            width: 100%;
+            top: 50%;
+            margin-top: -3.125rem;
+            left: 0;
+            z-index: 5; }
+
+          .tag {
+            position: absolute;
+            bottom: 5em;
+            z-index: 10;
+            width: 100%;
+            text-align: center; }
+            .tag a {
+              color: white; }
+
+              html {
+                font-size: 100%;
+                box-sizing: border-box; }
+
+              *,
+              *::before,
+              *::after {
+                box-sizing: inherit; }
+
+              body {
+                padding: 0;
+                margin: 0;
+                font-family: "Raleway", sans-serif;
+                font-weight: normal;
+                line-height: 1.5;
+                color: #fefefe;
+                background: #fefefe;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale; }
+
+                html,body {
+                  height: 100%;
+                }
+
+                @font-face {
+                  font-family: "Acta";
+                  src: url("/fonts/37005071-b652-4def-8bb3-55fa40f28899.eot?#iefix");
+                  src: url("/fonts/37005071-b652-4def-8bb3-55fa40f28899.eot?#iefix") format("eot"), url("/fonts/d43ce201-c609-4bd5-b93d-465fadbbbeb6.woff2") format("woff2"), url("/fonts/11bedca6-0c3b-4ece-a8d2-46645d1cfa0f.woff") format("woff"), url("/fonts/853dc195-a277-46b6-acd0-43c17211b7a9.ttf") format("truetype"); }
+
+                  h1, h2, h3, h4, h5 {
+                    font-family: "Acta", sans-serif; }
+        </style>
+    </head>
+    <body>
+      <div class="gradient-page">
+          <div class="gradient-page__inner gradient-page__inner--guutter gradient-page__inner--lost"></div>
+          <div class="gradient-inner__content">
+              <div class="banner">
+                  <h1 class="title title--light title--minimal title--visible">
+                      <span class="title__text">404</span>
+                  </h1>
+              </div>
+          </div>
+          <p class="tag copy"><a href="/">Let's Go Home</a></p>
+      </div>
+      <script>
+        console.log("\n")
+        console.log("\"Not until we are lost do we begin to understand ourselves.\" - Henry David Thoreau")
+      </script>
+    </body>
+</html>

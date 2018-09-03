@@ -1,0 +1,46 @@
+
+@import '~/assets/scss/breakpoints.scss';
+
+.hero {
+	position: relative;
+	transition: opacity 1s ease-in-out;
+}
+
+
+.hero--most {
+	height: 75vh;
+}
+
+.hero--full {
+	height: 80vh;
+}
+
+.hero__title {
+	position: relative;
+	text-align: center;
+	z-index: 5;
+	width: 200%;
+	top: 60%;
+	left: -75px;
+    @include md {
+		left: -100px;
+	}
+}
+
+.hero__brand-wrapper {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 25%;
+	z-index: 1000;
+
+  @include lg {
+		top: 25%;
+	}
+}
+
+.hero__logo {
+	max-width: 200px;
+	display: block;
+	margin: auto;
+}
