@@ -5,9 +5,8 @@ export default {
   props: ['img', 'offset', 'overlay'],
   delimeters: ['[[', ']]'],
   render,
-  data() {
+  data () {
     let background
-    let styles = {}
 
     if (this.img) {
       background = `url(${this.img}) center center no-repeat`
@@ -17,5 +16,5 @@ export default {
     } else {
       return {}
     }
-  },
+  }
 }

@@ -11,7 +11,7 @@ export default {
     menuShown: state => state.menuShown,
     isHeroVisible: state => state.isHeroVisible,
     currentGradient: state => state.currentGradient,
-    isFixed() {
+    isFixed () {
       if (this.$nuxt.$route.name === 'index') {
         return false
       }

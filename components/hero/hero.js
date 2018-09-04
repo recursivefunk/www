@@ -8,7 +8,7 @@ import { debounce } from '../../utils'
 export default {
   props: ['overlay', 'img', 'size'],
   render,
-  mounted() {
+  mounted () {
     const body = document.getElementById('body-scroll')
     const update = () => {
       if (window.scrollY > this.lastKnownScrollY) {
@@ -22,7 +22,7 @@ export default {
     }
     body.onscroll = debounce(update, 10)
   },
-  data() {
+  data () {
     return {
       opacity: 1,
       lastKnownScrollY: process.browser.scrollY,
@@ -30,7 +30,7 @@ export default {
     }
   },
   watch: {
-    lastKnownScrollY(val) {
+    lastKnownScrollY (val) {
       const animationDelay = 200
       const breakpointUp = 350
       const breakpointDown = 250

@@ -4,11 +4,11 @@ export default function (h) {
     'title': true,
     'title--centered': this.centered,
     'mt1 mb1': this.pad,
-    'title--large': this.size === 'large' ? true : false,
-    'title--small': this.size === 'small' ? true : false,
+    'title--large': this.size === 'large' ? true : false, // eslint-disable-line
+    'title--small': this.size === 'small' ? true : false, // eslint-disable-line
     // The hero title gets special styling. If it's an h1 AND a in a hero,
     // don't apply the .title--h1 class
-    'title--h1': (this.tag === 'h1' && !this.heroTitle) ? true : false
+    'title--h1': (this.tag === 'h1' && !this.heroTitle) ? true : false // eslint-disable-line
   }
   const innerClasses = {
     'title__text': true,

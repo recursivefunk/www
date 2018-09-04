@@ -1,10 +1,9 @@
 
-import { mapState } from 'vuex'
 import render from './social-links-renderer'
 
 export default {
   render,
-  data() {
+  data () {
     return {
       links: [
         {
@@ -26,7 +25,7 @@ export default {
         {
           name: 'instagram',
           href: 'https://instagram.com/recursivefunk'
-        },
+        }
       ]
     }
   }

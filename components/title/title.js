@@ -1,5 +1,4 @@
 
-import { mapState } from 'vuex'
 import render from './title-renderer'
 
 export default {
@@ -31,7 +30,7 @@ export default {
     tag: {
       default: 'h1',
       require: false,
-      validator(val) {
+      validator (val) {
         const validTags = ['h1', 'h2', 'h3']
         const v = val.trim().toLowerCase()
         return validTags.some(tag => tag === v)

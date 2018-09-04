@@ -2,12 +2,12 @@
 import render from './hamburger-renderer'
 
 export default {
-  data() {
+  data () {
     return { open: false }
   },
   render,
   methods: {
-    onClick() {
+    onClick () {
       this.open = !this.open
       if (this.open) {
         this.$store.commit('showMenu')

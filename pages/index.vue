@@ -19,7 +19,6 @@
                 </media-text>
             </div>
 
-
             <div class="Media-Text-Grid">
                 <media-text img="/img/records.jpg"></media-text>
                 <media-text title="Recursive Funk">
@@ -46,8 +45,5 @@ export default {
   }
 }
 
-console.log(
-`\n
-${getMessage()}
-\n`)
+console.log(`\n${getMessage()}\n`)
 </script>

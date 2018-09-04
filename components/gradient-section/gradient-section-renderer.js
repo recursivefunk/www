@@ -9,7 +9,7 @@ export default function (h) {
           'gradient-section': true,
           'gradient-section--offset': this.offset
         }}>
-          <div class="gradient-section__overlay"></div>
+        <div class="gradient-section__overlay"></div>
       </div>
     )
   } else {

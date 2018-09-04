@@ -16,7 +16,6 @@
                 </div>
             </section>
 
-
             <section class="Section">
                 <funky-title
                     text="Up Next"
@@ -50,13 +49,11 @@
                         background="#000">
                     </talk>
 
-
                     <talk
                         dest="https://www.ctoconnection.com/"
                         logo="/img/logos/cto-logo.png"
                         background="#f7931e">
                     </talk>
-
 
                     <talk
                         dest="http://https://frontendcareers.website/"
@@ -66,7 +63,6 @@
                         background="#fff">
                     </talk>
 
-
                     <talk
                         dest="http://wearecolorcoded.us/"
                         outline="#000"
@@ -75,14 +71,12 @@
                         background="#fff">
                     </talk>
 
-
                     <talk
                         dest="http://codelandconf.com/"
                         flavor="dark"
                         logo="/img/logos/2018-codeland-logo.png"
                         background="#FFD65C">
                     </talk>
-
 
                     <talk
                         dest="http://nationjs.com/"
@@ -96,7 +90,6 @@
                         logo="/img/logos/cww.png"
                         background="#e23430">
                     </talk>
-
 
                     <talk
                         dest="https://generalassemb.ly/"
@@ -137,8 +130,5 @@ export default {
   }
 }
 
-console.log(
-`\n
-${getMessage()}
-\n`)
+console.log(`\n${getMessage()}\n`)
 </script>

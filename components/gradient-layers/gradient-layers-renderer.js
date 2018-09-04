@@ -1,5 +1,5 @@
 
-export default function(h) {
+export default function (h) {
   const layers = this.layers.map(num => {
     let classes = ['gradient-layer']
     if (this.currentGradient === num) {

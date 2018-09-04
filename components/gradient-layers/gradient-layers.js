@@ -5,7 +5,7 @@ import render from './gradient-layers-renderer'
 export default {
   props: ['reverse', 'small'],
   render,
-  data() {
+  data () {
     return {
       layers: [1, 2, 3, 4]
     }

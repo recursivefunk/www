@@ -57,8 +57,5 @@ export default {
   }
 }
 
-console.log(
-`\n
-${getMessage()}
-\n`)
+console.log(`\n${getMessage()}\n`)
 </script>
