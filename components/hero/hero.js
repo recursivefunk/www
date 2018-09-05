@@ -3,10 +3,24 @@ import render from './hero-renderer'
 import GradientSection from '../gradient-section'
 import GradientLayers from '../gradient-layers'
 import FunkyTitle from '../title'
-import { debounce } from '../../utils'
+import {
+  debounce,
+  isBooly,
+  createComputedBooly
+} from '../../utils'
 
 export default {
-  props: ['overlay', 'img', 'size'],
+  props: ['overlay', 'img'],
+  props: {
+    img: {
+      required: true
+    },
+    overlay: {
+      require: false,
+      default: true,
+      validator: val => isBooly(val)
+    }
+  },
   render,
   mounted () {
     const body = document.getElementById('body-scroll')
@@ -28,6 +42,9 @@ export default {
       lastKnownScrollY: process.browser.scrollY,
       scrollDirection: null
     }
+  },
+  computed: {
+    _overlay: createComputedBooly('overlay'),
   },
   watch: {
     lastKnownScrollY (val) {

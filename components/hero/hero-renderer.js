@@ -4,10 +4,10 @@ export default function (h) {
 
   return (
     <div id="hero-scroll" class="hero hero--full pad-half" style={style} ref="el">
-      <gradient-section overlay="true"></gradient-section>
+      <gradient-section overlay={this._overlay}></gradient-section>
       <gradient-layers></gradient-layers>
       <div class="hero__brand-wrapper">
-        <img src="/img/logo@200.png" class="hero__logo" alt="logo@200" />
+        <img src={this.img} class="hero__logo" alt="logo@200" />
         <funky-title
           text="Recursive Funk"
           size="large"

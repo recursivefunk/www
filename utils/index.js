@@ -20,8 +20,22 @@ const debounce = (func, wait, immediate) => {
   }
 }
 
+const isBooly = item => (
+  item === true || item === 'true' || item === false || item === 'false'
+)
+
+const createComputedBooly = (varName) => {
+  return function () {
+    if (this[varName] === 'true' || this[varName] === true) {
+      return true
+    } else if (this[varName] === 'false' || this[varName] === false) {
+      return false
+    }
+  }
+}
+
 const ran = () => Math.floor(Math.random() * messages.length)
 
 const getMessage = () => messages[ran()]
 
-export { debounce, getMessage }
+export { debounce, getMessage, isBooly, createComputedBooly }

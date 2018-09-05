@@ -15,7 +15,6 @@
                     <media-text img="/img/me-no-look.jpg" displayWhen="show-lg-up"></media-text>
                 </div>
             </section>
-
             <section class="Section">
                 <div class="copy-paragraph">
                     <copy condensed=true>Johnny is an experienced engineering leader with interest in everything from UX design to distributed systems. He is an active member of the open source community - contributing to projects such as Node.js as well as authoring an array of NPM modules. His specialty is in full stack JavaScript but has experience with Python and Go.</copy>
@@ -44,7 +43,6 @@ import Hero from '~/components/hero/index.vue'
 import MediaText from '~/components/media-text/index.vue'
 import copy from '~/components/copy/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
-import { getMessage } from '../../utils'
 
 export default {
   components: {
@@ -56,6 +54,4 @@ export default {
     copy
   }
 }
-
-console.log(`\n${getMessage()}\n`)
 </script>

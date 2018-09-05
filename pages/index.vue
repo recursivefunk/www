@@ -1,6 +1,6 @@
 <template>
     <span>
-        <hero overlay=true img="/static/img/white-rose.jpg" size="full"></hero>
+        <hero overlay=true img="/img/logo@200.png"></hero>
         <div class="container">
             <div class="Media-Text-Grid">
                 <media-text img="/img/me-train.jpg"></media-text>
@@ -34,7 +34,6 @@ import GradientLayers from '~/components/gradient-layers/index.vue'
 import GradientSection from '~/components/gradient-section/index.vue'
 import Hero from '~/components/hero/index.vue'
 import MediaText from '~/components/media-text/index.vue'
-import { getMessage } from '../utils'
 
 export default {
   components: {
@@ -44,6 +43,4 @@ export default {
     'media-text': MediaText
   }
 }
-
-console.log(`\n${getMessage()}\n`)
 </script>

@@ -1,18 +1,13 @@
 
 export default function (h) {
-  const classes = ['copy']
-
-  if (this.condensed) {
-    classes.push('copy--condensed')
+  const obj = {
+    'copy': true,
+    'copy--condensed': this._condensed === true,
+    'copy--full-width': this._fullWidth === true,
+    'copy--centered': this._centered === true
   }
 
-  if (this.fullWidth) {
-    classes.push('copy--full-width')
-  }
-
-  if (this.centered) {
-    classes.push('copy--centered')
-  }
+  const classes = Object.keys(obj).filter(k => obj[k])
 
   return (
     <p class={classes}>{this.$slots.default}</p>

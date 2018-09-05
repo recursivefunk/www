@@ -11,6 +11,7 @@
 import FunkyFooter from '~/components/footer'
 import FunkyHeader from '~/components/header'
 import Menu from '~/components/menu'
+import { getMessage } from '../utils'
 
 export default {
   mounted () {
@@ -29,6 +30,7 @@ export default {
     'funky-menu': Menu
   }
 }
+console.log(`\n${getMessage()}\n`)
 </script>
 
 <style lang="scss">
