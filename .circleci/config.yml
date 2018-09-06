@@ -35,13 +35,15 @@ jobs:
 
       - run:
           name: sys deps
-          command: sudo apt update && sudo apt install awscli
-
-      - run:
-          name: activate cloud front
           command: |
-                  aws configure set preview.cloudfront true
-                  aws configure set preview.create-invalidation true
+                  sudo apt-get install python-dev python-pip
+                  sudo pip install awscli
+
+      # - run:
+      #     name: activate cloud front
+      #     command: |
+      #             aws configure set preview.cloudfront true
+      #             aws configure set preview.create-invalidation true
 
       # - run:
       #     name: Install awscli
