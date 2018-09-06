@@ -1,23 +1,26 @@
 # recursivefunk.io
 
+[![Circle CI](https://circleci.com/gh/recursivefunk/www.png?circle-token=0f49669559b99c927c0870d04307eefc03ced07e)](https://circleci.com/gh/recursivefunk/www)
+
 > Johnny Ray's personal website
 
-## Build Setup
+## Setup
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+$ nvm install
+$ npm install 
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## Dev
+```bash
+# serve with hot reload at localhost:3000
+$ npm run dev
+```
 
+## Generate static website
+```bash
+$ npm run build # output goes to dist/
+```
+
+## Deploy
+Whatever tickles your fancy for deploying a static website. I'm using S3 + Cloudfront 🤷🏾‍♂️
