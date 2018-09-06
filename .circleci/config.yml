@@ -15,31 +15,22 @@ jobs:
       - run: npm cache verify
       - run: npm install
 
-      # run tests!
       - run: npm run lint
 
       - run:
-        filters:
-          branches:
-            only: master
         name: Generate static assets
         command: npm run build
 
       - run:
-        filters:
-          branches:
-            only: master
         name: sys deps
         command: |
                 sudo apt-get install python-dev python-pip
                 sudo pip install awscli
 
       - run:
-        filters:
-          branches:
-            only: master
         name: Deploy to S3
         command: npm run deploy
+
 
 workflows:
   version: 2
