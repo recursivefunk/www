@@ -10,7 +10,6 @@ import {
 } from '../../utils'
 
 export default {
-  props: ['overlay', 'img'],
   props: {
     img: {
       required: true
@@ -44,7 +43,7 @@ export default {
     }
   },
   computed: {
-    _overlay: createComputedBooly('overlay'),
+    _overlay: createComputedBooly('overlay')
   },
   watch: {
     lastKnownScrollY (val) {
