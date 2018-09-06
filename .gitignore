@@ -12,3 +12,9 @@ dist
 public
 
 .DS_Store
+
+#SERVERLESS STUFF
+admin.env
+.env
+_meta
+.serverless

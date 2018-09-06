@@ -1,0 +1,25 @@
+
+service: recursivefunk-web
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+custom:
+  siteName: recursivefunk.io
+  s3Sync:
+    - bucketName: ${self:custom.siteName}
+      localDir: dist
+
+resources:
+  Resources:
+    StaticSite:
+      Type: AWS::S3::Bucket
+      Properties:
+        AccessControl: PublicRead
+        BucketName: ${self:custom.siteName}
+        WebsiteConfiguration:
+          IndexDocument: index.html
+
+plugins:
+  - serverless-s3-sync
