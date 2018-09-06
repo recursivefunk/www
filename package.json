@@ -5,9 +5,9 @@
   "author": "Johnny Ray Austin <hi@johnnyray.me>",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "start": "nuxt start",
-    "deploy": "serverless deploy -v --staging production",
+    "deploy": "./scripts/deploy.sh",
     "generate": "nuxt generate",
     "lint": "eslint components/**/*.js pages/**/*.vue",
     "precommit": "npm run lint"
