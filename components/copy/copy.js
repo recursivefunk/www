@@ -1,4 +1,6 @@
-
+/**
+ * A convenience component for paragraph text
+ */
 import render from './copy-renderer'
 import { isBooly, createComputedBooly } from '../../utils'
 

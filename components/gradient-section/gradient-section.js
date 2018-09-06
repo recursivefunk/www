@@ -3,7 +3,6 @@ import render from './gradient-section-renderer'
 
 export default {
   props: ['img', 'offset', 'overlay'],
-  delimeters: ['[[', ']]'],
   render,
   data () {
     let background

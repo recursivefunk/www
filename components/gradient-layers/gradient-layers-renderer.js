@@ -5,6 +5,8 @@ export default function (h) {
     if (this.currentGradient === num) {
       classes.push('gradient-layer--active')
     }
+
+    // @TODO: Is this class even being used anymore?
     if (this.reverse) {
       classes.push(`gradient-layer--reverse-${num}`)
     } else {
