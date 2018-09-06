@@ -12,44 +12,32 @@ jobs:
 
     steps:
       - checkout
-      # # Download and cache dependencies
-      # - restore_cache:
-      #     keys:
-      #     - v1-dependencies-{{ checksum "package.json" }}
-      #     # fallback to using the latest cache if no exact match is found
-      #     - v1-dependencies-
       - run: npm cache verify
       - run: npm install
-
-      # - save_cache:
-      #     paths:
-      #       - node_modules
-      #     key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
       - run: npm run lint
 
       - run:
+        filters:
+          branches:
+            only: master
           name: Generate static assets
           command: npm run build
 
       - run:
+        filters:
+          branches:
+            only: master
           name: sys deps
           command: |
                   sudo apt-get install python-dev python-pip
                   sudo pip install awscli
 
-      # - run:
-      #     name: activate cloud front
-      #     command: |
-      #             aws configure set preview.cloudfront true
-      #             aws configure set preview.create-invalidation true
-
-      # - run:
-      #     name: Install awscli
-      #     command: sudo pip install awscli
-
       - run:
+        filters:
+          branches:
+            only: master
           name: Deploy to S3
           command: npm run deploy
 
