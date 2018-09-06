@@ -6,7 +6,7 @@ const mutations = {
    * Toggles the visibility state of the nav to true
    *
    */
-  showMenu (appState) {
+  setMenuVisible (appState) {
     appState.menuShown = true
   },
 
@@ -14,18 +14,16 @@ const mutations = {
    * Toggles the visibility state of the nav to false
    *
    */
-  hideMenu (appState) {
+  setMenuHidden (appState) {
     appState.menuShown = false
   },
 
-  // @TODO: Commit to convention, Johnny. Either a separate mutation for
-  // showing and hiding like the menu, or one function like this one.
-  heroVisible (state, isVisible) {
-    if (isVisible === true || isVisible === false) {
-      state.isHeroVisible = isVisible
-    } else {
-      console.warn(`Invalid val for visible: ${isVisible}`)
-    }
+  setHeroHidden (state) {
+    state.isHeroVisible = false
+  },
+
+  setHeroVisible (state) {
+    state.isHeroVisible = true
   },
 
   /**
@@ -42,6 +40,24 @@ const mutations = {
   }
 }
 
+const actions = {
+  hideHero ({ commit }) {
+    commit('setHeroHidden')
+  },
+  showHero ({ commit }) {
+    commit('setHeroVisible')
+  },
+  hideMenu ({ commit }) {
+    commit('setMenuHidden')
+  },
+  showMenu ({ commit }) {
+    commit('setMenuVisible')
+  },
+  nextGradient ({ commit }) {
+    commit('incrementGradient')
+  }
+}
+
 const createStore = () => (
   new Vuex.Store({
     state: {
@@ -54,7 +70,8 @@ const createStore = () => (
       menuShown: false,
       isHeroVisible: true
     },
-    mutations
+    mutations,
+    actions
   })
 )
 

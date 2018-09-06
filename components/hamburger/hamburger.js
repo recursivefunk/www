@@ -10,9 +10,9 @@ export default {
     onClick () {
       this.open = !this.open
       if (this.open) {
-        this.$store.commit('showMenu')
+        this.$store.dispatch('showMenu')
       } else {
-        this.$store.commit('hideMenu')
+        this.$store.dispatch('hideMenu')
       }
     }
   }

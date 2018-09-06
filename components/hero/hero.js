@@ -52,10 +52,10 @@ export default {
       const breakpointDown = 250
       if (this.scrollDirection === 'down' && val > breakpointDown && this.opacity > 0) {
         this.opacity = 0
-        setTimeout(() => this.$store.commit('heroVisible', false), animationDelay)
+        setTimeout(() => this.$store.dispatch('hideHero'), animationDelay)
       } else if (this.scrollDirection === 'up' && val < breakpointUp && this.opacity < 1) {
         this.opacity = 1
-        setTimeout(() => this.$store.commit('heroVisible', true), animationDelay)
+        setTimeout(() => this.$store.dispatch('showHero'), animationDelay)
       }
     }
   },
