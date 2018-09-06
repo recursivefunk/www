@@ -40,8 +40,8 @@ jobs:
 
     steps:
       - run:
-        name: sys deps
-        command: apt update && apt install awscli
+          name: sys deps
+          command: apt update && apt install awscli
 
       # - run:
       #     name: Install awscli
