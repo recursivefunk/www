@@ -40,8 +40,12 @@ jobs:
 
     steps:
       - run:
-          name: Install awscli
-          command: sudo pip install awscli
+        name: sys deps
+        command: apt update && apt install awscli
+
+      # - run:
+      #     name: Install awscli
+      #     command: sudo pip install awscli
 
       - run:
           name: Deploy to S3
