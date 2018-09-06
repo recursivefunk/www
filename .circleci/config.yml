@@ -37,7 +37,11 @@ jobs:
           name: sys deps
           command: sudo apt update && sudo apt install awscli
 
-      - run: aws configure set preview.cloudfront true
+      - run:
+          name: activate cloud front
+          command: |
+                  aws configure set preview.cloudfront true
+                  aws configure set preview.create-invalidation true
 
       # - run:
       #     name: Install awscli
