@@ -18,18 +18,21 @@ jobs:
       - run: npm run lint
 
       - run:
-        name: Generate static assets
-        command: npm run build
+          name: Generate static assets
+          command: npm run build
 
       - run:
-        name: sys deps
-        command: |
-                sudo apt-get install python-dev python-pip
-                sudo pip install awscli
+          name: sys deps
+          command: |
+                  sudo apt-get install python-dev python-pip
+                  sudo pip install awscli
 
       - run:
-        name: Deploy to S3
-        command: npm run deploy
+          filters:
+            branches:
+              only: master
+          name: Deploy to S3
+          command: npm run deploy
 
 
 workflows:
