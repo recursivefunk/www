@@ -5,9 +5,6 @@
 version: 2
 jobs:
   build:
-    branches:
-      only:
-        - master
     docker:
       # specify the version you desire here
       - image: circleci/node:8.10
@@ -61,6 +58,3 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: master
