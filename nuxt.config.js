@@ -29,7 +29,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  ga_code: 'UA-89738690-1',
   /*
   ** Customize the progress bar color
   */
