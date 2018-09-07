@@ -28,8 +28,7 @@ export default function (h) {
           tag="h2"
           text={this.title}
           highlight={true}
-          size="small"
-          centered={true}>
+          size="small">
         </funky-title>
       )
     }

@@ -6,7 +6,6 @@
                     text="Speaking"
                     size="large"
                     highlight=true
-                    centered=true
                     tag="h1">
                 </funky-title>
 
@@ -19,7 +18,6 @@
                 <funky-title
                     text="Up Next"
                     size="small"
-                    centered=true
                     highlight=true
                     tag="h2">
                 </funky-title>
@@ -36,7 +34,6 @@
                 <funky-title
                     text="Past Appearances"
                     size="small"
-                    centered=true
                     highlight=true
                     tag="h2">
                 </funky-title>

@@ -2,7 +2,6 @@
 export default function (h) {
   const outerClasses = {
     'title': true,
-    'title--centered': this.centered,
     'mt1 mb1': this.pad,
     'title--large': this.size === 'large' ? true : false, // eslint-disable-line
     'title--small': this.size === 'small' ? true : false, // eslint-disable-line

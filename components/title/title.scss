@@ -4,6 +4,8 @@
 
 .title {
     color: var(--true-black);
+    width: 100%;
+    text-align: center;
 
     &--layout {
         margin-top: 1.8em;
@@ -37,11 +39,6 @@
             }
         }
     }
-}
-
-.title--centered {
-    width: 100%;
-    text-align: center;
 }
 
 .title--h1 {

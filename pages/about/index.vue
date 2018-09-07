@@ -6,7 +6,6 @@
                     text="About"
                     size="large"
                     highlight=true
-                    centered=true
                     tag="h1">
                 </funky-title>
 

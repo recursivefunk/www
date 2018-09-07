@@ -11,7 +11,6 @@ export default function (h) {
         <funky-title
           text="Recursive Funk"
           size="large"
-          centered={true}
           highlight={true}
           heroTitle={true}
           tag="h1">

@@ -19,10 +19,6 @@ export default {
       default: false,
       required: false
     },
-    centered: {
-      default: false,
-      required: false
-    },
     heroTitle: {
       default: false,
       require: false

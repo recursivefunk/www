@@ -8,8 +8,7 @@ export default function (h) {
             tag="h2"
             text="I Believe In You"
             highlight={true}
-            size="small"
-            centered={true}>
+            size="small">
           </funky-title>
           <social-links></social-links>
         </div>
