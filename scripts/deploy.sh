@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # Upload to S3. This could very well just be an S3 sync thing, but I started
 # down a different, serverless-based path and ended up simplifying it
