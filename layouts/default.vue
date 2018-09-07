@@ -30,6 +30,7 @@ export default {
     'funky-menu': Menu
   }
 }
+
 console.log(`\n${getMessage()}\n`)
 </script>
 
