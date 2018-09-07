@@ -38,7 +38,7 @@ export default function (h) {
       <div class={cls}>
         <div class="Media-Text__Content">
           {title}
-          <copy condensed={true}>
+          <copy>
             {this.$slots.default}
           </copy>
         </div>

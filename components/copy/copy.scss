@@ -6,10 +6,7 @@
 	line-height: 2;
 	padding: 1em;
 	letter-spacing: .02em;
-
-	&--condensed {
-		padding: 1em;
-	}
+	padding: 1em;
 
 	&--wide {
 		@include md {

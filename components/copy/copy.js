@@ -6,11 +6,6 @@ import { isBooly, createComputedBooly } from '../../utils'
 
 export default {
   props: {
-    condensed: {
-      required: false,
-      default: false,
-      validator: val => isBooly(val)
-    },
     fullWidth: {
       required: false,
       default: false,
@@ -24,8 +19,7 @@ export default {
   },
   computed: {
     _centered: createComputedBooly('centered'),
-    _fullWidth: createComputedBooly('fullWidth'),
-    _condensed: createComputedBooly('condensed')
+    _fullWidth: createComputedBooly('fullWidth')
   },
   render
 }
