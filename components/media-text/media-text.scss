@@ -37,29 +37,6 @@
 	}
 }
 
-.Media-Text__key-val {
-	padding-left: 2em;
-	padding-right: 2em;
-
-	@include md {
-		font-size: 1.3em;
-		padding: 0;
-	}
-
-	@include lg {
-		font-size: .9em;
-	}
-
-	.Media-Text-Key-Val__item:not(:last-child) {
-		margin-bottom: .5em;
-	}
-}
-
-.Media-Text__key-val--key {
-	font-family: var(--serif-font-family);
-	padding-right: .5em;
-}
-
 .Media-Text__Content {
 	@include lg {
 		position: relative;
