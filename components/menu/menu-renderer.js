@@ -8,7 +8,7 @@ export default function (h) {
   const links = this.links.map(link => (
     <li class="Menu__nav-item">
       <h2 class="title title--light">
-        <a href={link.href}>{ link.label }</a>
+        <a href={link.href}>{link.label}</a>
       </h2>
     </li>)
   )
