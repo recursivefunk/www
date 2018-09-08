@@ -8,7 +8,7 @@ export default function (h) {
       <div>
         <div class="header__logo-wrapper">
           < a href="/">
-            <img src="/img/logo@200.png" alt="logo@200" />
+            <img src={this.logo} alt={this.alt} />
           </a>
         </div>
       </div>

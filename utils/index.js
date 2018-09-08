@@ -34,8 +34,15 @@ const createComputedBooly = (varName) => {
   }
 }
 
+const getAlt = img => {
+  const parts = img.split('/')
+  const i = parts.length - 1
+  const file = parts[i]
+  return file.split('.')[0]
+}
+
 const ran = () => Math.floor(Math.random() * messages.length)
 
 const getMessage = () => messages[ran()]
 
-export { debounce, getMessage, isBooly, createComputedBooly }
+export { getAlt, debounce, getMessage, isBooly, createComputedBooly }

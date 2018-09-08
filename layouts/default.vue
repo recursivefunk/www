@@ -1,7 +1,7 @@
 <template>
     <main id="master-wrapper">
         <funky-menu></funky-menu>
-        <funky-header></funky-header>
+        <funky-header logo="/img/logo@200.png"></funky-header>
         <nuxt/>
         <funky-footer/>
     </main>

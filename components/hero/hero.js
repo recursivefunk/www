@@ -6,7 +6,8 @@ import FunkyTitle from '../title'
 import {
   debounce,
   isBooly,
-  createComputedBooly
+  createComputedBooly,
+  getAlt
 } from '../../utils'
 
 export default {
@@ -43,7 +44,10 @@ export default {
     }
   },
   computed: {
-    _overlay: createComputedBooly('overlay')
+    _overlay: createComputedBooly('overlay'),
+    alt () {
+      return getAlt(this.img)
+    }
   },
   watch: {
     lastKnownScrollY (val) {

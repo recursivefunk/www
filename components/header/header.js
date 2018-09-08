@@ -4,8 +4,14 @@ import render from './header-renderer'
 import GradientLayers from '../gradient-layers'
 import GradientSection from '../gradient-section'
 import Hamburger from '../hamburger'
+import { getAlt } from '../../utils'
 
 export default {
+  props: {
+    logo: {
+      require: true
+    }
+  },
   render,
   computed: mapState({
     // Can we see the menu?
@@ -22,6 +28,9 @@ export default {
         return false
       }
       return true
+    },
+    alt () {
+      return getAlt(this.logo)
     }
   }),
   components: {

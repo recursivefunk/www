@@ -19,7 +19,7 @@ export default function (h) {
       <div class="Talk__logo-wrapper" style={style}>
         <a href={this.dest} target="_blank">
           <div class="Talk__content" style={contentStyle}>
-            <img class="Talk__logo" src={this.logo} alt="org_logo" />
+            <img class="Talk__logo" src={this.logo} alt={this.alt} />
           </div>
         </a>
       </div>
