@@ -1,4 +1,6 @@
 
+@import '~assets/scss/breakpoints.scss';
+
 .Hamburger {
 	width: 50px;
 	height: 90%;
@@ -9,10 +11,6 @@
 	transform: rotate(0deg);
 	transition: .3s ease-in-out;
 	cursor: pointer;
-
-	@media(--sm-viewport) {
-		margin-left: .5em;
-	}
 }
 
 .Hamburger span {
