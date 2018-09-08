@@ -8,9 +8,15 @@ import Hamburger from '../hamburger'
 export default {
   render,
   computed: mapState({
+    // Can we see the menu?
     menuShown: state => state.menuShown,
+    // Is any part of the hero visible?
     isHeroVisible: state => state.isHeroVisible,
+    // What is the current gradient index?
     currentGradient: state => state.currentGradient,
+    // Only make the header fixed, if we're not on the home page.
+    // The home page does a fancy hide-and-seek type deal based
+    // on the scroll position
     isFixed () {
       if (this.$nuxt.$route.name === 'index') {
         return false

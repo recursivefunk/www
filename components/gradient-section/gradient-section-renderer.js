@@ -1,28 +1,17 @@
 
 export default function (h) {
   let markup
-  if (this.overlay) {
-    markup = (
-      <div
-        style={this.styles}
-        class={{
-          'gradient-section': true,
-          'gradient-section--offset': this.offset
-        }}>
-        <div class="gradient-section__overlay"></div>
-      </div>
-    )
-  } else {
-    markup = (
-      <div
-        style={this.styles}
-        class={{
-          'gradient-section': true,
-          'gradient-section--offset': this.offset
-        }}>
-      </div>
-    )
+  const cls = {
+    'gradient-section': true,
+    'gradient-section--offset': this.offset
   }
+  markup = (
+    <div
+      style={this.styles}
+      class={cls}>
+      { this.overlay ? <div class="gradient-section__overlay"></div> : null }
+    </div>
+  )
 
   return markup
 }
