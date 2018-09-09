@@ -29,6 +29,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  env: {
+    mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN
+  },
   /*
   ** Customize the progress bar color
   */

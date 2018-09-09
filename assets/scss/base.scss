@@ -13,6 +13,27 @@ body {
   margin: 0;
 }
 
+#map-wrapper {
+	position: relative;
+	height: 200px;
+
+	@include md {
+		height: 400px;
+		padding: .5em;
+	}
+
+	@include lg {
+		height: 500px;
+		padding: .5em;
+	}
+}
+
+#map {
+	height: 100%;
+	z-index: 3;
+	opacity: .8;
+}
+
 h1,
 h2,
 h3,
@@ -39,14 +60,6 @@ h4 {
 	}
 }
 
-// ul {
-// 	list-style-type: none;
-//
-// 	li {
-// 		margin: 0;
-// 		padding: 0;
-// 	}
-// }
 
 // -----------------------------------------------------
 // Section

@@ -36,6 +36,7 @@
 </template>
 
 <script>
+
 import GradientLayers from '~/components/gradient-layers/index.vue'
 import GradientSection from '~/components/gradient-section/index.vue'
 import Hero from '~/components/hero/index.vue'
@@ -43,7 +44,33 @@ import MediaText from '~/components/media-text/index.vue'
 import copy from '~/components/copy/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
 
+// Load MapboxGL asynchronously _after_ the page is ready
+const loadGL = () => import('mapbox-gl')
+
 export default {
+  async mounted () {
+    if (process.browser) {
+      const mapboxgl = await loadGL()
+      mapboxgl.accessToken = process.env.mapboxAccessToken
+      const map = new mapboxgl.Map({
+        container: 'map',
+        interactive: false,
+        style: 'mapbox://styles/recursivefunk/cjlvhovei2jzn2ss2wcvgleng',
+        // DC!
+        center: [-77.038, 38.899],
+        zoom: 12.0
+      })
+      // don't ask...
+      map.foo = 'bar'
+    }
+  },
+  head () {
+    return {
+      link: [
+        { rel: 'stylesheet', href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' }
+      ]
+    }
+  },
   components: {
     'hero': Hero,
     'gradient-layers': GradientLayers,
@@ -53,4 +80,5 @@ export default {
     copy
   }
 }
+
 </script>
