@@ -51,7 +51,7 @@
                     </talk>
 
                     <talk
-                        dest="http://https://frontendcareers.website/"
+                        dest="http://frontendcareers.website/"
                         outline="#000"
                         flavor="dark"
                         logo="/img/logos/frontend-careers.png"
