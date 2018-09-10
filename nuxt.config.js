@@ -32,6 +32,11 @@ module.exports = {
   env: {
     mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN
   },
+  // generate: {
+  //   minify: {
+  //     collapseWhitespace: false
+  //   }
+  // }
   /*
   ** Customize the progress bar color
   */

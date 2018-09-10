@@ -3,7 +3,7 @@
         <funky-menu></funky-menu>
         <funky-header logo="/img/logo@200.png"></funky-header>
         <nuxt/>
-        <section id="map-wrapper" v-if="isAboutPage">
+        <section id="map-wrapper" v-show="isAboutPage">
           <section id="map"></section>
           <gradient-layers/>
         </section>

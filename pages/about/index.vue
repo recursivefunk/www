@@ -43,7 +43,6 @@ import Hero from '~/components/hero/index.vue'
 import MediaText from '~/components/media-text/index.vue'
 import copy from '~/components/copy/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
-
 // Load MapboxGL asynchronously _after_ the page is ready
 const loadGL = () => import('mapbox-gl')
 
@@ -51,7 +50,7 @@ export default {
   async mounted () {
     if (process.browser) {
       const mapboxgl = await loadGL()
-      mapboxgl.accessToken = process.env.mapboxAccessToken
+      mapboxgl.accessToken = 'pk.eyJ1IjoicmVjdXJzaXZlZnVuayIsImEiOiJjamJ4eWo0YzQydGowMnZ1Zjg4dGFoNHBvIn0.3yfGCrsomP8itKOxcqowRQ'
       const map = new mapboxgl.Map({
         container: 'map',
         interactive: false,
