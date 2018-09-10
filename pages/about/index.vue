@@ -54,7 +54,7 @@ export default {
       const map = new mapboxgl.Map({
         container: 'map',
         interactive: false,
-        style: 'mapbox://styles/recursivefunk/cjlvhovei2jzn2ss2wcvgleng',
+        style: 'mapbox://styles/recursivefunk/cjlvhovei2jzn2ss2wcvgleng?foo',
         // DC!
         center: [-77.038, 38.899],
         zoom: 12.0
