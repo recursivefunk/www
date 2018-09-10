@@ -53,7 +53,7 @@ export default {
       const map = new mapboxgl.Map({
         container: 'map',
         interactive: false,
-        style: 'mapbox://styles/recursivefunk/cjlwevz533k412sqmpx3anvox?bust',
+        style: `mapbox://styles/recursivefunk/cjlwevz533k412sqmpx3anvox?${Date.now()}`,
         // DC!
         center: [-77.038, 38.899],
         zoom: 12.0
