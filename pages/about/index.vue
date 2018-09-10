@@ -8,7 +8,6 @@
                     highlight=true
                     tag="h1">
                 </funky-title>
-
                 <div class="Media-Text-Grid">
                     <media-text img="/img/kid-me.jpg"></media-text>
                     <media-text img="/img/me-no-look.jpg" displayWhen="show-lg-up"></media-text>
@@ -36,7 +35,6 @@
 </template>
 
 <script>
-
 import GradientLayers from '~/components/gradient-layers/index.vue'
 import GradientSection from '~/components/gradient-section/index.vue'
 import Hero from '~/components/hero/index.vue'
@@ -55,17 +53,21 @@ export default {
       const map = new mapboxgl.Map({
         container: 'map',
         interactive: false,
-        style: 'mapbox://styles/recursivefunk/cjlwevz533k412sqmpx3anvox?fresh',
+        style: 'mapbox://styles/recursivefunk/cjlwevz533k412sqmpx3anvox?bust',
         // DC!
         center: [-77.038, 38.899],
         zoom: 12.0
       })
 
+      // when the gradient changes, for the UI, change the map highlight colors
+      // to change in sync. This makes it look like one UI
       this.$store.subscribe((mutation, type) => {
         if (mutation.type === 'incrementGradient') {
-          const color = this.gradients[this.currentGradient - 1]
-          map.setPaintProperty('water', 'fill-color', color)
-          map.setPaintProperty('road-secondary-tertiary', 'line-color', color)
+          const colorMap = this.gradients[this.currentGradient - 1]
+          // secondary roads are colored with the left gradient and water is
+          // colored with the right gradient
+          map.setPaintProperty('road-secondary-tertiary', 'line-color', colorMap.from)
+          map.setPaintProperty('water', 'fill-color', colorMap.to)
         }
       })
     }
@@ -73,7 +75,10 @@ export default {
   head () {
     return {
       link: [
-        { rel: 'stylesheet', href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' }
+        {
+          rel: 'stylesheet',
+          href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css'
+        }
       ]
     }
   },
@@ -87,5 +92,4 @@ export default {
     copy
   }
 }
-
 </script>
