@@ -19,12 +19,11 @@ body {
 
 	@include md {
 		height: 400px;
-		padding: .5em;
+		padding: .25em;
 	}
 
 	@include lg {
 		height: 500px;
-		padding: .5em;
 	}
 }
 
