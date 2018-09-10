@@ -68,7 +68,13 @@ const createStore = () => (
       maxNumGradients: 4,
       // Menu should not be visible when the page loads
       menuShown: false,
-      isHeroVisible: true
+      isHeroVisible: true,
+      gradients: [
+        '#FF512F',
+        '#02AAB0',
+        '#FF5F6D',
+        '#FF512F'
+      ]
     },
     mutations,
     actions

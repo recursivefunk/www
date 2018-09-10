@@ -43,6 +43,7 @@ import Hero from '~/components/hero/index.vue'
 import MediaText from '~/components/media-text/index.vue'
 import copy from '~/components/copy/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
+import { mapState } from 'vuex'
 // Load MapboxGL asynchronously _after_ the page is ready
 const loadGL = () => import('mapbox-gl')
 
@@ -59,8 +60,15 @@ export default {
         center: [-77.038, 38.899],
         zoom: 12.0
       })
-      // don't ask...
-      map.foo = 'bar'
+
+      this.$store.subscribe((mutation, type) => {
+        if (mutation.type === 'incrementGradient') {
+          const color = this.gradients[this.currentGradient - 1]
+          setTimeout(() => {
+            map.setPaintProperty('water', 'fill-color', color)
+          }, 2000)
+        }
+      })
     }
   },
   head () {
@@ -70,6 +78,7 @@ export default {
       ]
     }
   },
+  computed: mapState(['gradients', 'currentGradient']),
   components: {
     'hero': Hero,
     'gradient-layers': GradientLayers,
