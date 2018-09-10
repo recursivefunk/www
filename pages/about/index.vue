@@ -55,7 +55,7 @@ export default {
       const map = new mapboxgl.Map({
         container: 'map',
         interactive: false,
-        style: 'mapbox://styles/recursivefunk/cjlwevz533k412sqmpx3anvox',
+        style: 'mapbox://styles/recursivefunk/cjlwevz533k412sqmpx3anvox?fresh',
         // DC!
         center: [-77.038, 38.899],
         zoom: 12.0
@@ -65,6 +65,7 @@ export default {
         if (mutation.type === 'incrementGradient') {
           const color = this.gradients[this.currentGradient - 1]
           map.setPaintProperty('water', 'fill-color', color)
+          map.setPaintProperty('road-secondary-tertiary', 'line-color', color)
         }
       })
     }
