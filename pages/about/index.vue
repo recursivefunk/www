@@ -47,7 +47,6 @@ const loadGL = () => import('mapbox-gl')
 
 export default {
   asyncData (context) {
-    console.log(context.env)
     return {
       mapboxAccessToken: context.env.mapboxAccessToken,
       mapboxStyle: context.env.mapboxStyle
