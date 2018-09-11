@@ -66,7 +66,7 @@ export default {
           const colorMap = this.gradients[this.currentGradient - 1]
           // secondary roads are colored with the left gradient and water is
           // colored with the right gradient
-          map.setPaintProperty('road-secondary-tertiary', 'line-color', colorMap.from)
+          // map.setPaintProperty('road-secondary-tertiary', 'line-color', colorMap.from)
           map.setPaintProperty('water', 'fill-color', colorMap.to)
         }
       })
