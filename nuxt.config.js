@@ -30,7 +30,8 @@ module.exports = {
     ]
   },
   env: {
-    mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN
+    mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+    mapboxStyle: process.env.RF_WEB_STYLE
   },
   // generate: {
   //   minify: {

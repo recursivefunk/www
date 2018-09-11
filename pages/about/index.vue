@@ -46,27 +46,30 @@ import { mapState } from 'vuex'
 const loadGL = () => import('mapbox-gl')
 
 export default {
+  asyncData (context) {
+    console.log(context.env)
+    return {
+      mapboxAccessToken: context.env.mapboxAccessToken,
+      mapboxStyle: context.env.mapboxStyle
+    }
+  },
   async mounted () {
     if (process.browser) {
       const mapboxgl = await loadGL()
-      mapboxgl.accessToken = 'pk.eyJ1IjoicmVjdXJzaXZlZnVuayIsImEiOiJjamJ4eWo0YzQydGowMnZ1Zjg4dGFoNHBvIn0.3yfGCrsomP8itKOxcqowRQ'
+      mapboxgl.accessToken = this.mapboxAccessToken
       const map = new mapboxgl.Map({
         container: 'map',
         interactive: false,
-        style: `mapbox://styles/recursivefunk/cjlwevz533k412sqmpx3anvox?${Date.now()}`,
+        style: `${this.mapboxStyle}?${Date.now()}`,
         // DC!
         center: [-77.038, 38.899],
         zoom: 12.0
       })
 
-      // when the gradient changes, for the UI, change the map highlight colors
-      // to change in sync. This makes it look like one UI
+      // when the gradient changes, change the map highlight colors to match
       this.$store.subscribe((mutation, type) => {
         if (mutation.type === 'incrementGradient') {
           const colorMap = this.gradients[this.currentGradient - 1]
-          // secondary roads are colored with the left gradient and water is
-          // colored with the right gradient
-          // map.setPaintProperty('road-secondary-tertiary', 'line-color', colorMap.from)
           map.setPaintProperty('water', 'fill-color', colorMap.to)
         }
       })
