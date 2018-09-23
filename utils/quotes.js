@@ -11,5 +11,6 @@ module.exports = [
   '"I\'ll be back." [The Terminator] <1984>',
   '"Here\'s Johnny!" [The Shining] <1980>',
   '"Nicky was a rat, because Sonny Black said he was a rat." [Donnie Brasco] <1997>',
-  '"All hell done broke loose now!" [Guess Who\'s Coming to Dinner] <1967>'
+  '"All hell done broke loose now!" [Guess Who\'s Coming to Dinner] <1967>',
+  '"I just made enough dough to bake biscuits for the projects" [Paid In Full] <2002>'
 ]
