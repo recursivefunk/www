@@ -24,6 +24,7 @@ export default {
   render,
   mounted () {
     const body = document.getElementById('body-scroll')
+    const delay = 10
     const update = () => {
       if (window.scrollY > this.lastKnownScrollY) {
         this.scrollDirection = 'down'
@@ -34,7 +35,7 @@ export default {
       }
       this.lastKnownScrollY = window.scrollY
     }
-    body.onscroll = debounce(update, 10)
+    body.onscroll = debounce(update, delay)
   },
   data () {
     return {
