@@ -17,9 +17,8 @@ sourceChanged = files.some(f => endsWithAny(extentions, f))
 console.log('\n=================================\n')
 
 if (sourceChanged) {
-  if (shell.exec('./node_modules/.bin/serverless deploy -v --staging production').code !== 0) {
-    shell.exec(`aws cloudfront create-invalidation --distribution-id ${cfId} --paths "/*"`)
-  }
+  shell.exec('./node_modules/.bin/serverless deploy -v --staging production')
+  shell.exec(`aws cloudfront create-invalidation --distribution-id ${cfId} --paths "/*"`)
 } else {
   console.log(`No source code changes. We're done, here.`)
 }
