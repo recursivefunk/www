@@ -16,28 +16,18 @@
             </section>
             <section class="Section">
                 <funky-title
-                    text="Up Next"
-                    size="small"
-                    highlight=true
-                    tag="h2">
-                </funky-title>
-                <div class="Talk-Grid Talk-Grid--Single">
-                    <talk
-                        dest="https://www.thestrangeloop.com/2018/a-theory-of-everything.html"
-                        outline="#000"
-                        logo="/img/logos/strangeloop.jpg"
-                        background="#fff">
-                    </talk>
-                </div>
-            </section>
-            <section class="Section">
-                <funky-title
                     text="Past Appearances"
                     size="small"
                     highlight=true
                     tag="h2">
                 </funky-title>
                 <div class="Talk-Grid">
+                    <talk
+                        dest="https://www.thestrangeloop.com/2018/a-theory-of-everything.html"
+                        outline="#000"
+                        logo="/img/logos/strangeloop.jpg"
+                        background="#fff">
+                    </talk>
                     <talk
                         dest="http://afrotech.com/"
                         logo="/img/logos/afrotech-logo.png"
