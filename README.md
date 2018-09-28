@@ -2,8 +2,6 @@
 
 [![Circle CI](https://circleci.com/gh/recursivefunk/www.png?circle-token=0f49669559b99c927c0870d04307eefc03ced07e)](https://circleci.com/gh/recursivefunk/www)
 
-> Johnny Ray's personal website
-
 ## Setup
 
 ``` bash
