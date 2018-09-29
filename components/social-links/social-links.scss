@@ -1,15 +1,12 @@
 
 .Social-Links {
-	padding: 0;
-	list-style-type: none;
-	display: block;
-  margin: auto;
-	position: relative;
-	//bottom: 5em;
-	z-index: 100;
-	width: 11rem;
-	//left: 50%;
-	//margin-left: -5.5rem;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+    width: 11rem;
 }
 
 .Social-Links__item {
@@ -23,8 +20,8 @@
     font-size: 1.2em;
 
     &:hover,
-		&:focus {
-      color: var(--black);
+    &:focus {
+        color: var(--black);
     }
     &::after {
         background: transparent;

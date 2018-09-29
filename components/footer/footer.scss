@@ -2,38 +2,38 @@
 @import '~assets/scss/variables.scss';
 
 .Footer {
-	padding: 4em;
-	background: var(--light-gray);
-	position: relative;
+    padding: 4em;
+    background: var(--light-gray);
+    position: relative;
 
-	&::after {
-		content: '';
-		position: absolute;
-		background: white;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: .2;
-		z-index: 1;
-	}
+    &::after {
+        content: '';
+        position: absolute;
+        background: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .2;
+        z-index: 1;
+    }
 
-	.title {
-		margin-bottom: 1em !important;
-	}
+    .title {
+        margin-bottom: 1em !important;
+    }
 }
 
 .Footer__Logo {
-	display: block;
-	width: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	z-index: 2;
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .Footer__Slogan {
-	margin-top: 1em;
-	position: relative;
-	z-index: 2;
+    margin-top: 1em;
+    position: relative;
+    z-index: 2;
 }
