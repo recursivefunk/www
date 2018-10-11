@@ -15,7 +15,7 @@
             </section>
             <section class="Section">
                 <div class="copy-paragraph">
-                    <copy>Johnny is an experienced engineering leader with interest in everything from UX design to distributed systems. He is an active member of the open source community - contributing to projects such as Node.js as well as authoring an array of NPM modules. His specialty is in full stack JavaScript but has experience with Python and Go.</copy>
+                    <copy>Johnny is an engineering leader with experience building cross-functional teams while driving towards technology, product and revenue goals. He is an active member of the open source community - contributing to projects such as Node.js and many others.</copy>
                 </div>
                 <div class="copy-paragraph">
                     <copy>Johnny serves as a member of the IT advisory board for the National Academy Foundation where he helps to ensure students receive the resources necessary to prepare them for industry or higher education. He is the former Curriculum Development Lead for the DC chapter of Black Girls Code - an organization dedicated to teaching young women of color how to program. Johnny now serves as a technology advisor for Black Girls Code.</copy>
