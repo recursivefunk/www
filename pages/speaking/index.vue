@@ -23,7 +23,7 @@
                 </funky-title>
                 <div class="Talk-Grid">
                     <talk
-                        dest="https://www.thestrangeloop.com/2018/a-theory-of-everything.html"
+                        dest="https://youtu.be/i8RoNdLuOYU"
                         outline="#000"
                         logo="/img/logos/strangeloop.jpg"
                         background="#fff">
