@@ -1,6 +1,8 @@
-# recursivefunk.io
+# [recursivefunk.io](https://recursivefunk.io)
 
 [![Circle CI](https://circleci.com/gh/recursivefunk/www.png?circle-token=0f49669559b99c927c0870d04307eefc03ced07e)](https://circleci.com/gh/recursivefunk/www)
+
+*This is my website. There are many like it, but this one is mine.*
 
 ## Setup
 
