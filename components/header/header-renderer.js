@@ -18,7 +18,7 @@ export default function (h) {
       </div>
 
       <div class="header__border">
-        <gradient-layers></gradient-layers>
+        <gradient-layers full={true}></gradient-layers>
       </div>
     </header>
   )

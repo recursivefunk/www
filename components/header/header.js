@@ -24,10 +24,7 @@ export default {
     // The home page does a fancy hide-and-seek type deal based
     // on the scroll position
     isFixed () {
-      if (this.$nuxt.$route.name === 'index') {
-        return false
-      }
-      return true
+      return this.$nuxt.$route.name === 'index' ? false : true
     },
     alt () {
       return getAlt(this.logo)

@@ -5,7 +5,7 @@
         <nuxt/>
         <section id="map-wrapper" v-show="isAboutPage">
           <section id="map"></section>
-          <gradient-layers/>
+          <gradient-layers full="true" />
         </section>
         <funky-footer/>
     </main>

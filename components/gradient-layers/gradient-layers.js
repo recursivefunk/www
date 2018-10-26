@@ -3,7 +3,7 @@ import { mapState } from 'vuex'
 import render from './gradient-layers-renderer'
 
 export default {
-  props: ['reverse', 'small'],
+  props: ['small', 'full'],
   render,
   data () {
     return {

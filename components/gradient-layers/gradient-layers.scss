@@ -1,15 +1,19 @@
 
 .gradient-layers {
-	width: 100%;
 	z-index: 1;
 
-	&--80 {
-		height: 90%;
-		width: 90%;
-		top: 6%;
-		left: 6%;
-		position: absolute;
-	}
+	height: 90%;
+	width: 90%;
+	top: 6%;
+	left: 6%;
+	position: absolute;
+
+    &--full {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
 }
 
 .gradient-layer {
@@ -26,32 +30,16 @@
 		background: linear-gradient(to left, #FF512F , #F09819);
 	}
 
-	&--reverse-1 {
-		background: linear-gradient(to left, #F09819, #FF512F);
-	}
-
 	&--2 {
 		background: linear-gradient(to left, #02AAB0 , #00CDAC);
-	}
-
-	&--reverse-2 {
-		background: linear-gradient(to left, #00CDAC, #02AAB0);
 	}
 
 	&--3 {
 		background: linear-gradient(to left, #FF5F6D , #FFC371);
 	}
 
-	&--reverse-3 {
-		background: linear-gradient(to left, #FFC371, #FF5F6D);
-	}
-
 	&--4 {
 		background: linear-gradient(to left, #FF512F , #DD2476);
-	}
-
-	&--reverse-4 {
-		background: linear-gradient(to left, #DD2476, #FF512F);
 	}
 
 	&--active {
