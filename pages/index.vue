@@ -13,7 +13,7 @@
                 <media-text title="Me" displayWhen="show-lg-up">
           I'm a software professional with over a decade of experience building and designing systems. I'm a public speaker, a writer, and an educator. I sometimes advise early stage startups and have even built some prototypes. If you want to learn more about my work, <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
                 </media-text>
-                <media-text img="/img/keyboard.jpg"></media-text>
+                <media-text img="/img/view.jpg"></media-text>
                 <media-text title="Me" displayWhen="hide-lg-up">
           I'm a software professional with over a decade of experience building and designing systems. I'm a public speaker, a writer, and an educator. I sometimes advise early stage startups and have even built some prototypes. If you want to learn more about my work, <a href="/work">head here</a> or <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
                 </media-text>
