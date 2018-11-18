@@ -13,7 +13,7 @@ export default {
     const sm = await loadSM()
     this.player = new Plae({
       url: '/swf',
-	    verbose: true,
+      verbose: true,
       soundManager: sm.soundManager,
       songs: [
         {
@@ -22,14 +22,14 @@ export default {
           title: 'VooDoo'
         }
       ],
-      onPlay: () => self.isPlaying = true,
-      onPause: () => self.isPlaying = false,
-      onResume: () => self.isPlaying = true,
+      onPlay: () => { self.isPlaying = true },
+      onPause: () => { self.isPlaying = false },
+      onResume: () => { self.isPlaying = true },
       onFinish: () => {
         self.isPlaying = false
         self.progressWidth = 0
       },
-      whilePlaying: function( time, percentComplete ) { // looks good
+      whilePlaying (time, percentComplete) {
         if (percentComplete % 2 === 0) {
           self.progressWidth = `${percentComplete}%`
         }
@@ -67,6 +67,6 @@ export default {
   components: {
     'gradient-section': GradientSection,
     'funky-title': FunkyTitle,
-    'gradient-layers': GradientLayers,
+    'gradient-layers': GradientLayers
   }
 }
