@@ -8,9 +8,9 @@ export default function (h) {
   const copyStyle = {
     'padding-top': 0
   }
-  const cls = ['play-button']
+  const cls = ['Player__play-pause-toggle']
 
-  if (!this.isPlaying) {
+  if (this.isPlaying) {
     cls.push('paused')
   }
 
@@ -23,12 +23,7 @@ export default function (h) {
           highlight={true}
           size="small">
         </funky-title>
-        <a class={cls} onClick={this.onClick} href="#">
-          <div class="left"></div>
-          <div class="right"></div>
-          <div class="triangle-1"></div>
-          <div class="triangle-2"></div>
-        </a>
+        <button class={cls} onClick={this.onClick}></button>
         <p class="copy copy--centered copy--italic" style={copyStyle}>{this.artist}</p>
       </div>
       <div class="Player__progress-bar">
