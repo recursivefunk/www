@@ -24,7 +24,7 @@ jobs:
       - run:
           filters:
             branches:
-              only: master        
+                only: master
           name: sys deps
           command: |
                   sudo apt-get install python-dev python-pip

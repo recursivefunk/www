@@ -60,7 +60,7 @@ export default {
           artist: 'Frank Ocean',
           title: 'VooDoo'
         }
-      ],
+      ]
     }
   },
   render,
