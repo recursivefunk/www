@@ -1,4 +1,5 @@
 
+import { mapState } from 'vuex'
 import FunkyTitle from '../title'
 import GradientSection from '../gradient-section'
 import GradientLayers from '../gradient-layers'
@@ -35,8 +36,14 @@ export default {
       },
       onReady (song) {
         self.title = song.title
-        // SHAME!...SHAME!...SHAME!...SHAME!
-        //delete window.soundManager
+        self.artist = song.artist
+      }
+    })
+
+    this.$store.subscribe((mutation, type) => {
+      if (mutation.type === 'incrementGradient') {
+        const colorMap = this.gradients[this.currentGradient - 1]
+        this.targetColor = colorMap.to
       }
     })
   },
@@ -44,7 +51,9 @@ export default {
     return {
       isPlaying: false,
       title: '',
-      progressWidth: 0
+      artist: '',
+      progressWidth: 0,
+      targetColor: ''
     }
   },
   render,
@@ -54,15 +63,7 @@ export default {
       this.player.play()
     }
   },
-  computed: {
-    btnClasses () {
-      const cls = ['play-button']
-      if (!this.isPlaying) {
-        cls.push('paused')
-      }
-      return cls
-    }
-  },
+  computed: mapState(['gradients', 'currentGradient']),
   components: {
     'gradient-section': GradientSection,
     'funky-title': FunkyTitle,

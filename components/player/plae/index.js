@@ -83,9 +83,7 @@ class Plae {
         self._log.debug(`Loaded: "${songData.title}"`)
       },
       onplay () {
-        console.log('sm onplay\n\n')
         if (opts.onPlay) {
-          console.log('plae onPlay\n\n')
           opts.onPlay(meta)
         }
       },
@@ -253,7 +251,6 @@ function destroySMWindowInstance () {
     if (window && window.soundManager) {
       delete window.soundManager
       clearInterval(interval)
-      console.log('done!')
     }
   }, 10)
 }

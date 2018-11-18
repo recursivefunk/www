@@ -31,9 +31,7 @@
   height: 100%;
   width: 0px;
   position: relative;
-  transition: width .5s ease-in-out;
-  background: #ff512f;
-  box-shadow: 0.015em 0.01em 0.05em 0.01em #ff512f
+  transition: width .5s ease-in-out, background 4s ease-in-out, box-shadow 4s ease-in-out;
 }
 
 .play-button {
