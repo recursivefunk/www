@@ -2,65 +2,65 @@
 @import '~assets/scss/breakpoints.scss';
 
 .Player {
-  position: relative;
-  height: auto;
-  .Player__content {
-      position: relative;
-      top: 50%;
-      margin-top: -25%;
-  }
+    position: relative;
+    height: auto;
+    .Player__content {
+        position: relative;
+        top: 50%;
+        margin-top: -25%;
+    }
 }
 
 .Player__progress-bar {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  bottom: 0;
-  background: #ccc;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    background: #ccc;
 
-  @include lg {
-    bottom: 20%;
-    width: 80%;
-    left: 10%;
-  }
+    @include lg {
+        bottom: 20%;
+        width: 80%;
+        left: 10%;
+    }
 }
 
 .Player-Progress-Bar__progress {
-  height: 100%;
-  width: 0px;
-  position: relative;
-  transition: width .5s ease-in-out, background 4s ease-in-out, box-shadow 4s ease-in-out;
+    height: 100%;
+    width: 0px;
+    position: relative;
+    transition: width .5s ease-in-out, background 4s ease-in-out, box-shadow 4s ease-in-out;
 }
 
 .Player__play-pause-toggle {
-  border: 0;
-  background: transparent;
-  box-sizing: border-box;
-  width: 0;
-  height: 74px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  position: relative;
-  padding: 0;
-  outline: none;
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    padding: 0;
+    outline: none;
 
-  border-color: transparent transparent transparent #202020;
-  transition: 100ms all ease;
-  cursor: pointer;
+    border-color: transparent transparent transparent #202020;
+    transition: 100ms all ease;
+    cursor: pointer;
 
-  // play state
-  border-style: solid;
-  border-width: 37px 0 37px 60px;
+    // play state
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
 
-  &.paused {
-    border-style: double;
-    border-width: 0px 0 0px 60px;
-  }
+    &.paused {
+        border-style: double;
+        border-width: 0px 0 0px 60px;
+    }
 
-  &:hover {
-    border-color: transparent transparent transparent #404040;
-  }
+    &:hover {
+        border-color: transparent transparent transparent #404040;
+    }
 }

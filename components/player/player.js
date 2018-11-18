@@ -13,15 +13,9 @@ export default {
     const sm = await loadSM()
     this.player = new Plae({
       url: '/swf',
-      verbose: true,
+      verbose: false,
       soundManager: sm.soundManager,
-      songs: [
-        {
-          url: 'sound/voodoo.mp3',
-          artist: 'Frank Ocean',
-          title: 'VooDoo'
-        }
-      ],
+      songs: this.songs,
       onPlay: () => { self.isPlaying = true },
       onPause: () => { self.isPlaying = false },
       onResume: () => { self.isPlaying = true },
@@ -30,6 +24,9 @@ export default {
         self.progressWidth = 0
       },
       whilePlaying (time, percentComplete) {
+        // Don't update the UI for every progress notification. Smoothly
+        // transition for every couple of updates. Not precise, but looks
+        // better IMHO, and this is _my_ website, afterall.
         if (percentComplete % 2 === 0) {
           self.progressWidth = `${percentComplete}%`
         }
@@ -40,6 +37,9 @@ export default {
       }
     })
 
+    // Keep up with the global current gradient pair. Update the progress bar
+    // to reflect the ending gradient color. This makes the progress appear to
+    // "breathe" along with the rest of the UI
     this.$store.subscribe((mutation, type) => {
       if (mutation.type === 'incrementGradient') {
         const colorMap = this.gradients[this.currentGradient - 1]
@@ -53,7 +53,14 @@ export default {
       title: '',
       artist: '',
       progressWidth: 0,
-      targetColor: ''
+      targetColor: '',
+      songs: [
+        {
+          url: 'sound/voodoo.mp3',
+          artist: 'Frank Ocean',
+          title: 'VooDoo'
+        }
+      ],
     }
   },
   render,
