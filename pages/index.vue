@@ -25,6 +25,11 @@
           I'm interested in everything at the intersection of technology and art. I'm an introverted people-person, and I'm immediately drawn to eccentricity. I enjoy not only meeting new and exciting people, but I like getting to know them as well. I value strong, lasting relationships.
                 </media-text>
             </div>
+            <div class="Media-Text-Grid">
+                <media-text img="/img/frank-ocean.jpg" displayWhen="hide-lg-up"></media-text>
+                <player/>
+                <media-text img="/img/frank-ocean.jpg" displayWhen="show-lg-up"></media-text>
+            </div>
         </div>
     </span>
 </template>
@@ -34,13 +39,15 @@ import GradientLayers from '~/components/gradient-layers/index.vue'
 import GradientSection from '~/components/gradient-section/index.vue'
 import Hero from '~/components/hero/index.vue'
 import MediaText from '~/components/media-text/index.vue'
+import Player from '~/components/player/index.vue'
 
 export default {
   components: {
     'hero': Hero,
     'gradient-layers': GradientLayers,
     'gradient-section': GradientSection,
-    'media-text': MediaText
+    'media-text': MediaText,
+    'player': Player
   }
 }
 </script>

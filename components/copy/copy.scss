@@ -21,6 +21,10 @@
         text-align: center;
     }
 
+    &--italic {
+      font-style: italic;
+    }
+
     @include md {
         font-size: 1.5em;
     }

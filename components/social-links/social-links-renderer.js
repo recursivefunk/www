@@ -8,7 +8,7 @@ export default function (h) {
     .map(link =>
       <li class="Social-Links__item">
         <a href={link.href} target="_blank" class="Social-Links__link">
-          <span class={link.icon}></span>
+          <i class={link.icon}></i>
         </a>
       </li>
     )
