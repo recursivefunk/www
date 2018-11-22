@@ -8,7 +8,9 @@ import {
   formId,
   determineBytesLoaded,
   determineByteProgress,
-  determineTimeProgress
+  determineTimeProgress,
+  volumeUp,
+  volumeDown
 } from './lib/utils'
 
 class Plae {
@@ -139,7 +141,7 @@ class Plae {
    * is specified, play the track at the current cursor position
    *
    */
-  play (index) {
+  async play (index) {
     if (Number.isInteger(index) && index > -1) {
       this._data.currentTrack = index
     } else {
@@ -154,9 +156,54 @@ class Plae {
       this.stop()
       sound.raw.play()
     } else {
-      sound.raw.togglePause()
+      const up = 1
+      const down = -1
+      if (!sound.raw.paused) {
+        await this.fadeVolume(sound.raw, down)
+        sound.raw.pause()
+      } else {
+        sound.raw.resume()
+        await this.fadeVolume(sound.raw, up)
+      }
     }
     return this
+  }
+
+  /**
+   * Increase or decrease volume incrementally for a fade in/out effect
+   */
+  async fadeVolume (sound, direction = 1) {
+    if (direction === 1) {
+      while (sound.volume < 100) {
+        await this.volumeUp(sound)
+      }
+    } else if (direction === -1) {
+      while (sound.volume > 0) {
+        await this.volumeDown(sound)
+      }
+    } else {
+      this._log.error(`Invalid direction parameter: ${direction}. Need 1 or -1`)
+    }
+  }
+
+  /**
+   * Increase the volume of the specified sound object
+   */
+  async volumeUp (sound) {
+    if (!sound) {
+      sound = this._data.songs[this._data.currentTrack].raw
+    }
+    return volumeUp(sound)
+  }
+
+  /**
+   * Decrease the volume of the specified sound object
+   */
+  async volumeDown (sound) {
+    if (!sound) {
+      sound = this._data.songs[this._data.currentTrack].raw
+    }
+    return volumeDown(sound)
   }
 
   /**
@@ -171,6 +218,8 @@ class Plae {
    * Pause playback
    */
   pause () {
+    const currentTrack = this._data.songs[this._data.currentTrack]
+    console.log(currentTrack)
     this._sm.pauseAll()
     return this
   }
@@ -188,7 +237,7 @@ class Plae {
     if (this._data.currentTrack > (this._data.songs.length - 1)) {
       this._data.currentTrack = 0
     }
-    return this.play()
+    return this.play(this._data.currentTrack)
   }
 
   /**

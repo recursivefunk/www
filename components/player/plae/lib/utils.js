@@ -72,6 +72,26 @@ const determineBytesLoaded = sound => {
   return sound.bytesLoaded / sound.bytesTotal
 }
 
+const volumeDown = async (sound, howMuch = 2) => (
+  new Promise(resolve => {
+    const targetVol = sound.volume > 1 ? sound.volume - howMuch : 0
+    setTimeout(() => {
+      sound.setVolume(targetVol)
+      resolve(targetVol)
+    }, 0)
+  })
+)
+
+const volumeUp = async (sound, howMuch = 2) => (
+  new Promise(resolve => {
+    const targetVol = sound.volume < 99 ? sound.volume + howMuch : 0
+    setTimeout(() => {
+      sound.setVolume(targetVol)
+      resolve(targetVol)
+    }, 0)
+  })
+)
+
 export {
   formId,
   shouldResume,
@@ -79,5 +99,7 @@ export {
   determineTimeProgress,
   determineBytesLoaded,
   determineByteProgress,
-  millsToTime
+  millsToTime,
+  volumeUp,
+  volumeDown
 }
