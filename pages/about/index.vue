@@ -27,7 +27,7 @@
                     <copy>As a member of the Tech Fellows program, Johnny helped drive the engineering culture at Capital One through high impact technology contributions and thought leadership. He also helped launch Capital One's Eno product - a Machine Learning enabled intelligent assistant that helps customers manage their money.</copy>
                 </div>
                 <div class="copy-paragraph">
-                    <copy>Johnny is currently running engineering for Mapbox's core capabilities for navigation and its related APIs and infrastructure as Head of Directions in Washington, DC.</copy>
+                    <copy>Johnny is currently running engineering for Mapbox's core navigation capabilities in Washington, DC.</copy>
                 </div>
             </section>
         </div>
