@@ -3,7 +3,7 @@
         <hero overlay=true img="/img/logo@200.png"></hero>
         <div class="container">
             <div class="Media-Text-Grid">
-                <media-text img="/img/me-train.jpg"></media-text>
+                <media-text img="/img/me-sky.jpg"></media-text>
                 <media-text title="TL;DR">
                     My name is Johnny. I work at <a href="https://mapbox.com" target="_blank">Mapbox</a> in DC as Head of Directions. My past includes Director of Technology at <a href="https://isl.co" target="_blank">ISL</a>, as well as engineering leadership at <a href="https://capitalone.com" target="_blank">Capital One</a>, <a href="https://everfi.com" target="_blank">EverFi</a> and more.<br><br>If you're looking for someone to <a href="/speaking">speak</a> about engineering leadership, JavaScript or just want to say hello, feel free to reach out!
                 </media-text>
