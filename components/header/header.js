@@ -13,6 +13,9 @@ export default {
     }
   },
   render,
+  data () {
+    return { offset: 85 }
+  },
   computed: mapState({
     // Can we see the menu?
     menuShown: state => state.menuShown,

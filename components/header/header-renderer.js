@@ -1,7 +1,8 @@
 
 export default function (h) {
+  const shouldHide = (this.isHeroVisible && !this.menuShown && !this.isFixed)
   const headerStyle = {
-    top: (this.isHeroVisible && !this.menuShown && !this.isFixed) ? '-85px' : 0
+    top: shouldHide ? `-${this.offset}px` : 0
   }
   return (
     <header class="header header-grid" style={headerStyle}>
