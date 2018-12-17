@@ -64,17 +64,25 @@ h4 {
 // Section
 // -----------------------------------------------------
 .Section {
-	padding: 1em;
+    padding: 1em;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .Section--layout {
-	margin-top: 70px;
-	padding-top: 0 !important;
+    margin-top: 70px;
+    padding-top: 0 !important;
 }
 
-.Section--sm-edge {
-	padding: 0;
-	@media(--lg-viewport) {
-		padding: 2em;
-	}
+.Grid {
+    display: grid;
+    grid-auto-rows: minmax(23rem, 23rem);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+
+    @include md {
+        grid-auto-rows: minmax(22rem, 22rem);
+        grid-template-columns: 1fr 1fr;
+    }
 }

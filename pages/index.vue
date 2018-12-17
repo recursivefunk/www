@@ -33,6 +33,27 @@
                 <media-text img="/img/frank-ocean.jpg" displayWhen="show-lg-up"></media-text>
             </div>
         </div>
+
+        <section class="Section">
+            <funky-title
+                text="Featured In"
+                highlight=true
+                tag="h2">
+            </funky-title>
+            <div class="Grid">
+                <talk
+                    dest="https://peopleofcolorintech.com/engineers/johnny-austin-head-of-navigation-data-at-mapbox/"
+                    logo="/img/logos/pocit.png"
+                    outline="#000"
+                    background="#fff">
+                </talk>
+                <talk
+                    dest="https://technical.ly/dc/2016/08/08/johnny-ray-austin/"
+                    logo="/img/logos/technically-dc.png"
+                    background="#d6ad29">
+                </talk>
+            </div>
+        </section>
     </span>
 </template>
 
@@ -42,6 +63,8 @@ import GradientSection from '~/components/gradient-section/index.vue'
 import Hero from '~/components/hero/index.vue'
 import MediaText from '~/components/media-text/index.vue'
 import Player from '~/components/player/index.vue'
+import Talk from '~/components/talk/index.vue'
+import FunkyTitle from '~/components/title/index.vue'
 
 export default {
   components: {
@@ -49,7 +72,9 @@ export default {
     'gradient-layers': GradientLayers,
     'gradient-section': GradientSection,
     'media-text': MediaText,
-    'player': Player
+    'player': Player,
+    'talk': Talk,
+    'funky-title': FunkyTitle
   }
 }
 </script>

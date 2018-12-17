@@ -20,11 +20,12 @@
             @include md {
                 font-size: 3em;
         }
+        margin-bottom: 1em;
     }
 
     &--small {
         margin-top: 1em;
-        margin-bottom: .2em;
+        margin-bottom: 1em;
         font-size: 1.3em;
         @include md {
             font-size: 1.8em;
