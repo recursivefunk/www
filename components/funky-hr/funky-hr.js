@@ -5,6 +5,6 @@ import GradientLayers from '../gradient-layers'
 export default {
   render,
   components: {
-    'gradient-layers': GradientLayers,
+    'gradient-layers': GradientLayers
   }
 }
