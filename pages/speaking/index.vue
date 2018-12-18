@@ -14,6 +14,9 @@
                     <media-text img="/img/cto-summit-2016.jpg" displayWhen="show-lg-up"></media-text>
                 </div>
             </section>
+
+            <funky-hr />
+
             <section class="Section">
                 <funky-title
                     text="Past Appearances"
@@ -96,6 +99,7 @@ import MediaText from '~/components/media-text/index.vue'
 import copy from '~/components/copy/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
 import Talk from '~/components/talk/index.vue'
+import FunkyHR from '~/components/funky-hr/index.vue'
 
 export default {
   components: {
@@ -104,7 +108,8 @@ export default {
     'media-text': MediaText,
     'funky-title': FunkyTitle,
     talk: Talk,
-    copy
+    copy,
+    'funky-hr': FunkyHR
   }
 }
 </script>

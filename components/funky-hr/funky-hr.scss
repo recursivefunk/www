@@ -1,0 +1,17 @@
+
+@import '~assets/scss/breakpoints.scss';
+
+.funky-hr {
+    height: 2px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    width: 80%;
+
+    @include lg {
+        width: 600px;
+    }
+}

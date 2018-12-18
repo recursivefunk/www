@@ -34,6 +34,8 @@
             </div>
         </div>
 
+        <funky-hr />
+
         <section class="Section">
             <funky-title
                 text="Featured In"
@@ -65,6 +67,7 @@ import MediaText from '~/components/media-text/index.vue'
 import Player from '~/components/player/index.vue'
 import Talk from '~/components/talk/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
+import FunkyHR from '~/components/funky-hr/index.vue'
 
 export default {
   components: {
@@ -74,7 +77,8 @@ export default {
     'media-text': MediaText,
     'player': Player,
     'talk': Talk,
-    'funky-title': FunkyTitle
+    'funky-title': FunkyTitle,
+    'funky-hr': FunkyHR
   }
 }
 </script>
