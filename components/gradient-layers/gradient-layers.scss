@@ -2,13 +2,20 @@
 @import '~assets/scss/breakpoints.scss';
 
 .gradient-layers {
-	z-index: 1;
+    z-index: 1;
+    height: 90%;
+    width: 90%;
+    top: 5.5%;
+    left: 6%;
+    position: absolute;
 
-	height: 90%;
-	width: 90%;
-	top: 6%;
-	left: 6%;
-	position: absolute;
+    @include iphone-x {
+        top: 4.8%;
+    }
+
+    @include lg {
+        top: 6%;
+    }
 
     &--full {
         width: 100%;
@@ -19,33 +26,33 @@
 }
 
 .gradient-layer {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	transition: opacity 4s ease-in-out;
-	z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 4s ease-in-out;
+    z-index: 0;
 
-	&--1 {
-		background: linear-gradient(to left, #FF512F , #F09819);
-	}
+    &--1 {
+        background: linear-gradient(to left, #FF512F , #F09819);
+    }
 
-	&--2 {
-		background: linear-gradient(to left, #02AAB0 , #00CDAC);
-	}
+    &--2 {
+        background: linear-gradient(to left, #02AAB0 , #00CDAC);
+    }
 
-	&--3 {
-		background: linear-gradient(to left, #FF5F6D , #FFC371);
-	}
+    &--3 {
+        background: linear-gradient(to left, #FF5F6D , #FFC371);
+    }
 
-	&--4 {
-		background: linear-gradient(to left, #FF512F , #DD2476);
-	}
+    &--4 {
+        background: linear-gradient(to left, #FF512F , #DD2476);
+    }
 
-	&--active {
-		opacity: 1;
-		z-index: 2;
-	}
+    &--active {
+        opacity: 1;
+        z-index: 2;
+    }
 }
