@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/recursivefunk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://recursivefunk.io
+  * I am recursivefunk (https://keybase.io/recursivefunk) on keybase.
+  * I have a public key with fingerprint B0C8 3240 215C 0F84 E880  42D0 0677 99CD 5634 1E71
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120edfeae6c8d29b603854c7890bbe7cce7d6b2c866bfd0ff06846ebe980b9504d00a",
+      "fingerprint": "b0c83240215c0f84e88042d0067799cd56341e71",
+      "host": "keybase.io",
+      "key_id": "067799cd56341e71",
+      "kid": "0101ce5f3e374f435c2002dc0ae986c77d3d4acccbd4ab139d57bed95beb6c8872ae0a",
+      "uid": "2a9d89d9fad0c623c6963eb154dc2200",
+      "username": "recursivefunk"
+    },
+    "service": {
+      "hostname": "recursivefunk.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1549986690,
+  "expire_in": 157680000,
+  "prev": "0b5b4dfa44ed5aef934f05349d027518171884cd48006846bcff8349730c60da",
+  "seqno": 40,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMNoAnicbVJ9TFZVHAZBCKxUQKUNtN2IlK+d+33vC82UWCppC/UNNj66555z4frC
+fV/fD15IxEF+MMU+aKtYBoRBRYFsoMteQxHBDUNzgUyNmdoEwqIysA2VzsX8q84/
+v53ze57nPL/nnDNPBPiF+gd5awes3PLt/ue6P/H4ZcOJyh0UtKNSyrKDsuG5ggsR
+drnzbDqiLBSgGYCRhhUsqBJiZCgAVuI5VZRkACEWVRWLSICMKgkC1BDQNCBInIAh
+liUAZR5wCACFSqA03cjHTodTN9xEFgJVYhkOMDSvAk3isCQBjiFQQRRlWUW8wHI0
+FmlCLLC7TAYxBxUXTtLt5Ixs8h7a+y/+kW9Aq5jXWMyKnMaxvMoAwCAVKMSYoIoi
+YhGnqKoKSYE0KyNehBjJPMSQTCqJjILnfHvm5BhFRpKMZE1BQBUYVhVkgcWQ5jmk
+MkTZBLqw01CKMEE7sepxuvRirHkMG7UzgSKtYl3FZrrmOP8HeziYw2l321V7IekW
+uN0Ol8Vku0sdJtyLYd6/QnlQNxAJlDCKMZGwG5SFJkjVrZvKxJZMphRkkEDhEofu
+xHm6ieBFQQJkmffgYjMlyEMOaQrHYcQrWJNZTgM8y8kIMCJPS7RISxKnIo7QzGeF
+qqZJpC2yJAWAzHxceLthpywcEXUr+UTTpecbitvjxNTO093ZgX7+oX5B8+eZP80v
+NGTRo/93oWvhrL4q6Na68OyM9sy2wWFsHWpdv7Un54JS7aWSBz89Bqye6fLrTRvr
+z0ZV/rZ62/IS7VRWp23mqOfwwK8bCifF+pZfPmqMqUt7793M9LcLMnffrDudcNiY
+PJRfuTvcV5awz7V02Bg6XjHjnXo1G83krrw93BftazPG0ibvBu811mxMap0pz62O
+agBXau/G0NWtIYGdXXJe9NdJ7UPJ624G+uJqEscvppR7u7/otW2Hh4a2pV2b3RVc
+/mFiwKgl5PLJmZduOW4/1RNfumftgZyupnmAKjv/elN0i+ibeXb2TvNXOTtHju77
+a3KLJatrwobOLguM+zFV/uY+SpTfj77UY/2sbAxeDrvxccydBwsyUuLvtd4/MNDY
+UfR41sI3RlfouV8O3g5v9vQVpk7D1tjf/ca17KAYT3/AO717+k8gujEudoWyOWa9
+5VbW+YvPPTmwTCx6ofjgt89XbPb5/ty2le8vq+j++83EmFeWJq85soAVO5QTNc1T
+rlpfYGjVDcgd/64goqrJGl5RsmV61dqJ1fEdD66kb1oSZeUO1lYF1wYI+58ZmWo5
+suteZH3zRGlPu7v0auCZ+SnfbwprC69LDVIujfX+HGtQzsmVdOeGxz5/kXrr2HJX
+3wcji9JP1RX+0VB+suHa1dd6I8MjFtc88I6+nP50ZMPiCLSr49z4T94fwhqXRPrv
+Dci4bvH+A5FEwx4=
+=K0DE
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/recursivefunk
+
+==================================================================
