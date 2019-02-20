@@ -28,9 +28,9 @@
                 </media-text>
             </div>
             <div class="Media-Text-Grid">
-                <media-text img="/img/frank-ocean.jpg" displayWhen="hide-lg-up"></media-text>
+                <media-text img="/img/cornel-west.jpeg" displayWhen="hide-lg-up"></media-text>
                 <player/>
-                <media-text img="/img/frank-ocean.jpg" displayWhen="show-lg-up"></media-text>
+                <media-text img="/img/cornel-west.jpeg" displayWhen="show-lg-up"></media-text>
             </div>
         </div>
 

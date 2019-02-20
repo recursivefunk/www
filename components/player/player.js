@@ -56,9 +56,9 @@ export default {
       targetColor: '',
       songs: [
         {
-          url: 'sound/voodoo.mp3',
-          artist: 'Frank Ocean',
-          title: 'VooDoo'
+          url: 'sound/clothing-style.mp3',
+          artist: 'Dr. Cornel West',
+          title: 'Clothing & Style'
         }
       ]
     }

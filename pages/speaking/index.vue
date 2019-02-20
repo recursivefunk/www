@@ -14,7 +14,23 @@
                     <media-text img="/img/cto-summit-2016.jpg" displayWhen="show-lg-up"></media-text>
                 </div>
             </section>
-
+<!--
+            <section class="Section">
+                <funky-title
+                    text="Coming Up"
+                    size="small"
+                    highlight=true
+                    tag="h2">
+                </funky-title>
+                <div class="Talk-Grid Talk-Grid--Single">
+                    <talk
+                        background="transparent"
+                        dest="https://2019.jsconf.eu/"
+                        logo="/img/logos/jsconf.png">
+                    </talk>
+                </div>
+            </section>
+-->
             <funky-hr />
 
             <section class="Section">
