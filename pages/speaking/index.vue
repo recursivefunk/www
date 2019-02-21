@@ -14,7 +14,6 @@
                     <media-text img="/img/cto-summit-2016.jpg" displayWhen="show-lg-up"></media-text>
                 </div>
             </section>
-<!--
             <section class="Section">
                 <funky-title
                     text="Coming Up"
@@ -25,12 +24,11 @@
                 <div class="Talk-Grid Talk-Grid--Single">
                     <talk
                         background="transparent"
-                        dest="https://2019.jsconf.eu/"
+                        dest="https://2019.jsconf.eu/johnny-austin/finding-your-abstraction-sweet-spot.html"
                         logo="/img/logos/jsconf.png">
                     </talk>
                 </div>
             </section>
--->
 
             <funky-hr />
 
