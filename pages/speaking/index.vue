@@ -47,11 +47,16 @@
                         background="#fff">
                     </talk>
                     <talk
+                        dest="https://ampmdc.co/"
+                        outline="#000"
+                        logo="/img/logos/ampm.jpg"
+                        background="#fff">
+                    </talk>
+                    <talk
                         dest="http://afrotech.com/"
                         logo="/img/logos/afrotech-logo.png"
                         background="#000">
                     </talk>
-
                     <talk
                         dest="https://www.ctoconnection.com/"
                         logo="/img/logos/cto-logo.png"
