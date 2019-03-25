@@ -3,7 +3,7 @@
         <hero overlay=true img="/img/logo@200.png"></hero>
         <div class="container">
             <div class="Media-Text-Grid">
-                <media-text img="/img/me-sky.jpg"></media-text>
+                <media-text img="/img/look-bw.jpg"></media-text>
                 <media-text title="TL;DR">
                     My name is Johnny. I lead engineering for Navigation at <a
                         href="https://mapbox.com" target="_blank">Mapbox</a> in
