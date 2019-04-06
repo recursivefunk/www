@@ -3,10 +3,6 @@
         <funky-menu></funky-menu>
         <funky-header logo="/img/logo@200.png"></funky-header>
         <nuxt/>
-        <section id="map-wrapper" v-show="isAboutPage">
-          <section id="map"></section>
-          <gradient-layers full="true" />
-        </section>
         <funky-footer/>
     </main>
 </template>
@@ -21,11 +17,6 @@ import { getMessage } from '../utils'
 export default {
   mounted () {
     this.cycle()
-  },
-  data () {
-    return {
-      isAboutPage: this.$nuxt.$route.name === 'about'
-    }
   },
   methods: {
     cycle () {

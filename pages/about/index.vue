@@ -26,9 +26,6 @@
                 <div class="copy-paragraph">
                     <copy>As a member of the Tech Fellows program, Johnny helped drive the engineering culture at Capital One through high impact technology contributions and thought leadership. He also helped launch Capital One's Eno product - a Machine Learning enabled intelligent assistant that helps customers manage their money.</copy>
                 </div>
-                <div class="copy-paragraph">
-                    <copy>Johnny is currently running engineering for Mapbox's core navigation capabilities in Washington, DC.</copy>
-                </div>
             </section>
         </div>
     </span>
@@ -42,48 +39,8 @@ import MediaText from '~/components/media-text/index.vue'
 import copy from '~/components/copy/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
 import { mapState } from 'vuex'
-// Load MapboxGL asynchronously _after_ the page is ready
-const loadGL = () => import('mapbox-gl')
 
 export default {
-  asyncData (context) {
-    return {
-      mapboxAccessToken: context.env.mapboxAccessToken,
-      mapboxStyle: context.env.mapboxStyle
-    }
-  },
-  async mounted () {
-    if (process.browser) {
-      const mapboxgl = await loadGL()
-      mapboxgl.accessToken = this.mapboxAccessToken
-      const map = new mapboxgl.Map({
-        container: 'map',
-        interactive: false,
-        style: `${this.mapboxStyle}?${Date.now()}`,
-        // DC!
-        center: [-77.038, 38.899],
-        zoom: 12.0
-      })
-
-      // when the gradient changes, change the map highlight colors to match
-      this.$store.subscribe((mutation, type) => {
-        if (mutation.type === 'incrementGradient') {
-          const colorMap = this.gradients[this.currentGradient - 1]
-          map.setPaintProperty('water', 'fill-color', colorMap.to)
-        }
-      })
-    }
-  },
-  head () {
-    return {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css'
-        }
-      ]
-    }
-  },
   computed: mapState(['gradients', 'currentGradient']),
   components: {
     'hero': Hero,

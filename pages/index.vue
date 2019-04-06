@@ -5,15 +5,21 @@
             <div class="Media-Text-Grid">
                 <media-text img="/img/look-bw.jpg"></media-text>
                 <media-text title="TL;DR">
-                    My name is Johnny. I lead engineering for Navigation at <a
-                        href="https://mapbox.com" target="_blank">Mapbox</a> in
-                    Washington, DC. My past includes Director of Technology at <a href="https://isl.co" target="_blank">ISL</a>, as well as engineering leadership at <a href="https://capitalone.com" target="_blank">Capital One</a>, <a href="https://everfi.com" target="_blank">EverFi</a> and more.<br><br>If you're looking for someone to <a href="/speaking">speak</a> about engineering leadership, JavaScript or just want to say hello, feel free to reach out!
+                    My name is Johnny. I'm a Staff Engineer at <a
+                        target="_blank" href="https://morningconsult.com/">Morning Consult</a> in Washington, DC. My past
+                    includes Engineering Director at <a
+                        target="_blank" href="https://mapbox.com">Mapbox</a>,
+                    Director of Technology at <a href="https://isl.co"
+                        target="_blank">ISL</a>, as well as engineering
+                    leadership at <a href="https://capitalone.com"
+                        target="_blank">Capital One</a> and <a
+                        href="https://everfi.com" target="_blank">EverFi</a>.<br><br>If you're looking for someone to <a href="/speaking">speak</a> about engineering leadership, JavaScript or just want to say hello, feel free to reach out!
                 </media-text>
             </div>
 
             <div class="Media-Text-Grid">
                 <media-text title="Me" displayWhen="show-lg-up">
-          I'm a software professional with over a decade of experience building and designing systems. I'm a public speaker, a writer, and an educator. I sometimes advise early stage startups and have even built some prototypes. If you want to learn more about my work, <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
+          I'm a software engineering professional with a decade and a half of experience building and designing systems. I'm a public speaker, a writer, and an educator. I sometimes advise early-stage startups and have even built some prototypes. If you want to learn more about my work, <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
                 </media-text>
                 <media-text img="/img/view.jpg"></media-text>
                 <media-text title="Me" displayWhen="hide-lg-up">
