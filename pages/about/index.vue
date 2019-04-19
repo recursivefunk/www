@@ -26,6 +26,22 @@
                 <div class="copy-paragraph">
                     <copy>As a member of the Tech Fellows program, Johnny helped drive the engineering culture at Capital One through high impact technology contributions and thought leadership. He also helped launch Capital One's Eno product - a Machine Learning enabled intelligent assistant that helps customers manage their money.</copy>
                 </div>
+                <div class="copy-paragraph">
+                    <copy>As Mapbox's Navigation Engineering Director, Johnny
+                    led a cross-functional team to transform the way Mapbox
+                    detected new data in the road network. Through the use of
+                    computer vision and statistical analysis, his team added
+                    tens of thousands of new road data points over the course
+                    of several months. He also formed and led the Logistics
+                    product vertical -  solving problems for customers
+                    concerned with highly-efficient delivery optimization
+                    scenarios.</copy>
+                </div>
+                <div class="copy-paragraph">
+                    <copy>Johnny is currently taking a break from management
+                    and building the product platform as a Staff Engineer at
+                    Morning Consult, in Washington, DC. </copy>
+                </div>
             </section>
         </div>
     </span>
