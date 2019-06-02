@@ -14,21 +14,6 @@
                     <media-text img="/img/cww-2017.jpg" displayWhen="show-lg-up"></media-text>
                 </div>
             </section>
-            <section class="Section">
-                <funky-title
-                    text="Coming Up"
-                    size="small"
-                    highlight=true
-                    tag="h2">
-                </funky-title>
-                <div class="Talk-Grid Talk-Grid--Single">
-                    <talk
-                        background="transparent"
-                        dest="https://2019.jsconf.eu/johnny-austin/finding-your-abstraction-sweet-spot.html"
-                        logo="/img/logos/jsconf.png">
-                    </talk>
-                </div>
-            </section>
 
             <funky-hr />
 
@@ -40,6 +25,11 @@
                     tag="h2">
                 </funky-title>
                 <div class="Talk-Grid">
+                    <talk
+                        background="#e10079"
+                        dest="https://2019.jsconf.eu/johnny-austin/finding-your-abstraction-sweet-spot.html"
+                        logo="/img/logos/jsconf.png">
+                    </talk>
                     <talk
                         dest="https://youtu.be/i8RoNdLuOYU"
                         outline="#000"
