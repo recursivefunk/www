@@ -37,11 +37,6 @@
                     concerned with highly-efficient delivery optimization
                     scenarios.</copy>
                 </div>
-                <div class="copy-paragraph">
-                    <copy>Johnny is currently taking a break from management
-                    and building the product platform as a Staff Engineer at
-                    Morning Consult, in Washington, DC. </copy>
-                </div>
             </section>
         </div>
     </span>

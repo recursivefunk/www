@@ -5,8 +5,8 @@
             <div class="Media-Text-Grid">
                 <media-text img="/img/look-bw.jpg"></media-text>
                 <media-text title="TL;DR">
-                    My name is Johnny. I'm a Staff Engineer at <a
-                        target="_blank" href="https://morningconsult.com/">Morning Consult</a> in Washington, DC. My past
+                    My name is Johnny. I'm a product and engineering leader,
+                    living in the Washington, DC area. My past
                     includes Engineering Director at <a
                         target="_blank" href="https://mapbox.com">Mapbox</a>,
                     Director of Technology at <a href="https://isl.co"
@@ -19,13 +19,11 @@
 
             <div class="Media-Text-Grid">
                 <media-text title="Me" displayWhen="show-lg-up">
-          I'm a software engineering professional with a decade and a half of
-          experience building and designing systems, as well as leading
-          successful engineering and product teams. I'm an <a href="/speaking">international speaker</a>, a writer, and an educator. I sometimes advise early-stage startups and have even built some prototypes. If you want to learn more about my work, <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
+          I have a decade and a half of experience building and designing systems, as well as leading successful engineering and product teams. I'm an <a href="/speaking">international speaker</a>, a writer, and an educator. I sometimes advise early-stage startups and have even built some prototypes. If you want to learn more about my work, <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
                 </media-text>
                 <media-text img="/img/view.jpg"></media-text>
                 <media-text title="Me" displayWhen="hide-lg-up">
-          I'm a software professional with over a decade of experience building and designing systems. I'm a public speaker, a writer, and an educator. I sometimes advise early stage startups and have even built some prototypes. If you want to learn more about my work, <a href="/work">head here</a> or <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
+          I have a decade and a half of experience building and designing systems, as well as leading successful engineering and product teams. I'm an <a href="/speaking">international speaker</a>, a writer, and an educator. I sometimes advise early-stage startups and have even built some prototypes. If you want to learn more about my work, <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
                 </media-text>
             </div>
 
