@@ -35,7 +35,9 @@ jobs:
             branches:
               only: master
           name: Deploy to S3
-          command: npm run deploy
+          command: |
+                  chown -R $USER:USER .
+                  npm run deploy
 
 
 workflows:
