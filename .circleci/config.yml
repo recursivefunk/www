@@ -36,7 +36,7 @@ jobs:
               only: master
           name: Deploy to S3
           command: |
-                  chown -R $USER:USER .
+                  chown -R $USER:$USER .
                   npm run deploy
 
 
