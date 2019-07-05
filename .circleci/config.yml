@@ -35,7 +35,7 @@ jobs:
             branches:
               only: master
           name: Deploy to S3
-          command: npm run deploy
+          command: sudo npm run deploy
 
 
 workflows:
