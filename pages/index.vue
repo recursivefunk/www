@@ -16,7 +16,6 @@
                         href="https://everfi.com" target="_blank">EverFi</a>.<br><br>If you're looking for someone to <a href="/speaking">speak</a> about engineering leadership, JavaScript or just want to say hello, feel free to reach out!
                 </media-text>
             </div>
-
             <div class="Media-Text-Grid">
                 <media-text title="Me" displayWhen="show-lg-up">
           I have a decade and a half of experience building and designing systems, as well as leading successful engineering and product teams. I'm an <a href="/speaking">international speaker</a>, a writer, and an educator. I sometimes advise early-stage startups and have even built some prototypes. If you want to learn more about my work, <a href="mailto:johnny@johnnyray.me">drop me a line</a>! You can read more about my background <a href="/about">here</a>.
