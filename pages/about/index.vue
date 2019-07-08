@@ -54,7 +54,6 @@
         </div>
     </span>
 </template>
-
 <script>
 import GradientLayers from '~/components/gradient-layers/index.vue'
 import GradientSection from '~/components/gradient-section/index.vue'
