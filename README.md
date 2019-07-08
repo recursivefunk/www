@@ -8,18 +8,17 @@
 
 ``` bash
 $ nvm install
-$ npm install 
+$ yarn
 ```
 
 ## Dev
 ```bash
-# serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev # serve with hot reload at localhost:3000
 ```
 
 ## Generate static website
 ```bash
-$ npm run build # output goes to dist/
+$ yarn build # output goes to dist/
 ```
 
 ## Deploy
