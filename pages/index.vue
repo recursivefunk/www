@@ -5,15 +5,21 @@
             <div class="Media-Text-Grid">
                 <media-text img="/img/my-feet.jpg"></media-text>
                 <media-text title="TL;DR">
-                    My name is Johnny. I'm a product and engineering leader,
-                    living in the Washington, DC area. My past
+                    My name is Johnny - I run engineering at <a
+                        target="_blank"
+                        href="https://www.hellotill.com/">Till</a>, in Washington, DC. My past
                     includes Engineering Director at <a
                         target="_blank" href="https://mapbox.com">Mapbox</a>,
                     Director of Technology at <a href="https://isl.co"
                         target="_blank">ISL</a>, as well as engineering
                     leadership at <a href="https://capitalone.com"
                         target="_blank">Capital One</a> and <a
-                        href="https://everfi.com" target="_blank">EverFi</a>.<br><br>If you're looking for someone to <a href="/speaking">speak</a> about engineering leadership, JavaScript or just want to say hello, feel free to reach out!
+                        href="https://everfi.com"
+                        target="_blank">EverFi</a>.<br><br>If you're looking
+                    for someone to <a href="/speaking">speak</a> about
+                    engineering leadership, JavaScript or just want to say
+                    hello, feel free to <a href="mailto:hi@johnnyray.me">reach
+                        out</a>!
                 </media-text>
             </div>
             <div class="Media-Text-Grid">
