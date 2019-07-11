@@ -45,7 +45,7 @@
                 </div>
                 <div class="copy-paragraph">
                     <copy>Johnny is currently building
-                    technolgy which increases sustainable and
+                    technology which increases sustainable and
                     affordable housing opportunities as VP of Engineering at
                     Till, in Washington, DC.
                     </copy>
