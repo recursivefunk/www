@@ -7,8 +7,8 @@
 ## Setup
 
 ``` bash
-$ nvm install
-$ yarn
+$ nvm use # Fetch the right node version
+$ make    # install deps, lint, build static assets
 ```
 
 ## Dev
@@ -18,7 +18,7 @@ $ yarn dev # serve with hot reload at localhost:3000
 
 ## Generate static website
 ```bash
-$ yarn build # output goes to dist/
+$ make build # output goes to dist/
 ```
 
 ## Deploy
