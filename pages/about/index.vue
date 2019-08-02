@@ -10,7 +10,7 @@
                 </funky-title>
                 <div class="Media-Text-Grid">
                     <media-text img="/img/kid-me.jpg"></media-text>
-                    <media-text img="/img/me-no-look.jpg" displayWhen="show-lg-up"></media-text>
+                    <media-text img="/img/till-headshot.jpg" displayWhen="show-lg-up"></media-text>
                 </div>
             </section>
             <section class="Section">
