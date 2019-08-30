@@ -19,6 +19,23 @@
 
             <section class="Section">
                 <funky-title
+                    text="Upcoming"
+                    size="small"
+                    highlight=true
+                    tag="h2">
+                </funky-title>
+                <div class="Talk-Grid Talk-Grid--Single">
+                    <talk
+                        background="#b9debc"
+                        dest="https://2019.cascadiajs.com/speakers/johnny-ray-austin"
+                        logo="/img/logos/cascadiajs.svg">
+                    </talk>
+                </div>
+
+            </section>
+
+            <section class="Section">
+                <funky-title
                     text="Past Appearances"
                     size="small"
                     highlight=true
@@ -37,15 +54,15 @@
                         background="#fff">
                     </talk>
                     <talk
+                        dest="http://afrotech.com/"
+                        logo="/img/logos/afrotech-logo.png"
+                        background="#000">
+                    </talk>
+                    <talk
                         dest="https://ampmdc.co/"
                         outline="#000"
                         logo="/img/logos/ampm.jpg"
                         background="#fff">
-                    </talk>
-                    <talk
-                        dest="http://afrotech.com/"
-                        logo="/img/logos/afrotech-logo.png"
-                        background="#000">
                     </talk>
                     <talk
                         dest="https://www.ctoconnection.com/"
