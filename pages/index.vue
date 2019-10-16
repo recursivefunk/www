@@ -3,7 +3,7 @@
         <hero overlay=true img="/img/logo@200.png"></hero>
         <div class="container">
             <div class="Media-Text-Grid">
-                <media-text img="/img/my-feet.jpg"></media-text>
+                <media-text img="/img/home-fists.jpg"></media-text>
                 <media-text title="TL;DR">
                     My name is Johnny - I run engineering at <a
                         target="_blank"
