@@ -10,29 +10,12 @@
                 </funky-title>
 
                 <div class="Media-Text-Grid">
+                    <media-text img="/img/cascadia-stage.jpg" displayWhen="show-lg-up"></media-text>
                     <media-text img="/img/cto-summit-2019.jpg"></media-text>
-                    <media-text img="/img/cww-2017.jpg" displayWhen="show-lg-up"></media-text>
                 </div>
             </section>
 
             <funky-hr />
-
-            <section class="Section">
-                <funky-title
-                    text="Upcoming"
-                    size="small"
-                    highlight=true
-                    tag="h2">
-                </funky-title>
-                <div class="Talk-Grid Talk-Grid--Single">
-                    <talk
-                        background="#b9debc"
-                        dest="https://2019.cascadiajs.com/speakers/johnny-ray-austin"
-                        logo="/img/logos/cascadiajs.svg">
-                    </talk>
-                </div>
-
-            </section>
 
             <section class="Section">
                 <funky-title
@@ -42,6 +25,11 @@
                     tag="h2">
                 </funky-title>
                 <div class="Talk-Grid">
+                    <talk
+                        background="#b9debc"
+                        dest="https://2019.cascadiajs.com/speakers/johnny-ray-austin"
+                        logo="/img/logos/cascadiajs.svg">
+                    </talk>
                     <talk
                         background="#e10079"
                         dest="https://2019.jsconf.eu/johnny-austin/finding-your-abstraction-sweet-spot.html"
