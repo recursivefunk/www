@@ -1,5 +1,5 @@
 
-import messages from './quotes'
+import { quotes } from './quotes'
 
 const debounce = (func, wait, immediate) => {
   let timeout
@@ -41,8 +41,8 @@ const getAlt = img => {
   return file.split('.')[0]
 }
 
-const ran = () => Math.floor(Math.random() * messages.length)
+const ran = () => Math.floor(Math.random() * quotes.length)
 
-const getMessage = () => messages[ran()]
+const getMessage = () => quotes[ran()]
 
 export { getAlt, debounce, getMessage, isBooly, createComputedBooly }

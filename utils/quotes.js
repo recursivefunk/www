@@ -1,4 +1,4 @@
-module.exports = [
+export const quotes = [
   '"You talking to me?" [Taxi Driver] <1976>',
   '"What we\'ve got here is failure to communicate." [Cool Hand Luke] <1967>',
   '"Some motherfuckers are always trying to ice skate uphill." [Blade] <1998>',
@@ -13,5 +13,7 @@ module.exports = [
   '"Nicky was a rat, because Sonny Black said he was a rat." [Donnie Brasco] <1997>',
   '"All hell done broke loose now!" [Guess Who\'s Coming to Dinner] <1967>',
   '"I just made enough dough to bake biscuits for the projects" [Paid In Full] <2002>',
-  '"They\'ve done studies, you know. 60% of the time, it works every time." [Anchorman] <2004>'
+  '"They\'ve done studies, you know. 60% of the time, it works every time." [Anchorman] <2004>',
+  '"Hold on to your butts" [Jurassic Park] <1993>',
+  '"If you let my daughter go now, that\'ll be the end of it. I will not look for you, I will not pursue you. But if you don\'t, I will look for you, I will find you, and I will kill you." [Taken] <2008>'
 ]
