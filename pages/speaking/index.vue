@@ -19,6 +19,24 @@
 
             <section class="Section">
                 <funky-title
+                    text="Upcoming"
+                    size="small"
+                    highlight=true
+                    tag="h2">
+                </funky-title>
+
+                <div class="Talk-Grid Talk-Grid--Single">
+                    <talk
+                        background="#ffffff"
+                        dest="https://newyork2020.theleaddeveloper.com/talks#johnny-austin"
+                        outline="#000"
+                        logo="/img/logos/lead-dev-logo.svg">
+                    </talk>
+                </div>
+            </section>
+
+            <section class="Section">
+                <funky-title
                     text="Past Appearances"
                     size="small"
                     highlight=true
