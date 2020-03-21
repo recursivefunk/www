@@ -27,8 +27,8 @@ export default {
           href: '/speaking'
         },
         {
-          label: 'Blog',
-          href: 'https://medium.com/@recursivefunk'
+          label: 'Uses',
+          href: '/uses'
         }
       ]
     }

@@ -110,15 +110,4 @@
     @include md {
         font-size: 5em;
     }
-
-    @include lg {
-        &:hover {
-            top: -.1em;
-            a {
-                &::after {
-                    background: var(--white);
-                }
-            }
-        }
-    }
 }
