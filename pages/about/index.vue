@@ -44,10 +44,10 @@
                     scenarios.</copy>
                 </div>
                 <div class="copy-paragraph">
-                    <copy>Johnny is currently building
-                    technology which increases sustainable and
-                    affordable housing opportunities as VP of Engineering at
-                    Till, in Washington, DC.
+                    <copy>Johnny is currently building a technology platform
+                    which transforms a renter's ability to pay, stay, and
+                    thrive in their home as VP of Engineering at Till, in
+                    Washington, DC.
                     </copy>
                 </div>
             </section>
