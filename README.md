@@ -1,6 +1,7 @@
 # [recursivefunk.io](https://recursivefunk.io)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fda1a0a7-aa21-48d3-98be-5191e551089d/deploy-status)](https://app.netlify.com/sites/recursivefunk/deploys)
+## Update: I've migrated to Squarespace, this is no longer in use.
+
 
 *This is my website. There are many like it, but this one is mine.*
 
