@@ -49,6 +49,11 @@
                 </media-text>
             </div>
         </div>
+        <div class="Media-Text-Grid">
+            <media-text img="/img/cornel-west.jpeg" displayWhen="hide-lg-up"></media-text>
+            <player/>
+            <media-text img="/img/cornel-west.jpeg" displayWhen="show-lg-up"></media-text>
+        </div>
     </span>
 </template>
 
@@ -57,6 +62,7 @@ import GradientLayers from '~/components/gradient-layers/index.vue'
 import GradientSection from '~/components/gradient-section/index.vue'
 import Hero from '~/components/hero/index.vue'
 import MediaText from '~/components/media-text/index.vue'
+import Player from '~/components/player/index.vue'
 import Talk from '~/components/talk/index.vue'
 import FunkyTitle from '~/components/title/index.vue'
 import FunkyHR from '~/components/funky-hr/index.vue'
@@ -67,6 +73,7 @@ export default {
     'gradient-layers': GradientLayers,
     'gradient-section': GradientSection,
     'media-text': MediaText,
+    'player': Player,
     'talk': Talk,
     'funky-title': FunkyTitle,
     'funky-hr': FunkyHR
